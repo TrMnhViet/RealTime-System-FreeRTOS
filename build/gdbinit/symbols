@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader/bootloader.elf
+    add-symbol-file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/health_monitor_mqtt.elf
+file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/test_control_motor.elf

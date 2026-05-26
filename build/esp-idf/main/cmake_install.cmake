@@ -1,8 +1,8 @@
-# Install script for directory: D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/main
+# Install script for directory: D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/health_monitor_mqtt")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sensor_read")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader/bootloader.elf
+file D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader/bootloader.elf

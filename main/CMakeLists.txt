@@ -1,17 +1,7 @@
 idf_component_register(
     SRCS
         "main.c"
-        "sensor.c"
-        "oled.c"
-        "health_monitor.c"
-        "can.c"
-    INCLUDE_DIRS
-        "."
-    REQUIRES
-        driver
-        esp_wifi
-        esp_event
-        esp_netif
-        mqtt
-        nvs_flash
+        "max30102.c"
+        "hcsr04.c"
+    INCLUDE_DIRS "."
 )

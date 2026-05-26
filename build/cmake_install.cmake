@@ -1,8 +1,8 @@
-# Install script for directory: D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final
+# Install script for directory: D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/health_monitor_mqtt")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sensor_read")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/esp-idf/cmake_install.cmake")
+  include("D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

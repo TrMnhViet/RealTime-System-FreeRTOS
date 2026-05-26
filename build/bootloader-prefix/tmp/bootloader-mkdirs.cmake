@@ -10,18 +10,18 @@ if(NOT EXISTS "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/components/bootloader/
   file(MAKE_DIRECTORY "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader"
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix"
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/tmp"
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/src"
-  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/tmp"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/src"
+  "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/RTOS_final/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/test_control_motor/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
