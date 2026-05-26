@@ -1,0 +1,1655 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbcc
+load:0x403ce710,len:0x2f5c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 12 2026 14:31:42[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot: efuse block revision: v1.1[0m
+[0;32mI (38) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a330h ( 41776) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001a358 vaddr=3fc8be00 size=013a4h (  5028) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001b704 vaddr=40380000 size=04914h ( 18708) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a9b8h (108984) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=0003a9e0 vaddr=40384914 size=073ach ( 29612) load[0m
+[0;32mI (153) esp_image: segment 5: paddr=00041d94 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Unicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     test_control_motor[0m
+[0;32mI (193) app_init: App version:      f897dca-dirty[0m
+[0;32mI (198) app_init: Compile time:     May 12 2026 14:37:10[0m
+[0;32mI (204) app_init: ELF file SHA256:  9017952fd...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (220) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v0.3[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FC8E100 len 00031F00 (199 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (257) heap_init: At 50000004 len 00001FE4 (7 KiB): RTCRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (291) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) MOTOR_CTRL: === Khoi dong dieu khien dong co ===[0m
+[0;32mI (309) MOTOR_CTRL: Motor init xong[0m
+[0;32mI (309) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (319) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (329) MOTOR_CTRL: Joystick init xong (X=GPIO0, Y=GPIO1)[0m
+[0;32mI (339) MOTOR_CTRL: CAN san sang (nhan HC-SR04)[0m
+[0;32mI (339) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (349) MOTOR_CTRL: San sang! Di chuyen joystick de dieu khien[0m
+[0;32mI (349) main_task: Returned from app_main()[0m
+[0;32mI (369) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (389) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (409) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (429) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (449) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (469) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (489) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (509) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (529) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (549) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (569) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (589) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (609) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (629) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (649) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (669) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (689) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (709) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (729) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (749) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (769) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (789) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (809) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (829) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (849) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (869) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (889) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (909) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (929) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (949) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (969) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (989) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1009) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1029) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1049) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1069) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1089) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (1109) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1129) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (1149) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1169) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1189) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1209) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (1229) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (1249) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (1269) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (1289) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (1309) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (1329) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1349) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1369) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1389) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1409) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1429) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1449) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1469) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1489) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1509) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1529) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (1549) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1569) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1589) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (1609) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1629) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1649) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (1669) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1689) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (1709) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1729) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1749) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (1769) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (1789) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (1809) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (1829) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1849) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (1869) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1889) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1909) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1929) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (1949) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (1969) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (1989) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (2009) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (2029) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (2049) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (2069) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (2089) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (2109) MOTOR_CTRL: L= 255  R=  57[0m
+[0;32mI (2129) MOTOR_CTRL: L= 255  R=  52[0m
+[0;32mI (2149) MOTOR_CTRL: L= 255  R=  51[0m
+[0;32mI (2169) MOTOR_CTRL: L= 255  R=  49[0m
+[0;32mI (2189) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (2209) MOTOR_CTRL: L= 255  R=  54[0m
+[0;32mI (2229) MOTOR_CTRL: L= 255  R=  50[0m
+[0;32mI (2249) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (2269) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (2289) MOTOR_CTRL: L= 255  R=  21[0m
+[0;32mI (2309) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (2329) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (2349) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2369) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (2389) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2409) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (2429) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (2449) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2469) MOTOR_CTRL: L= 255  R=  51[0m
+[0;32mI (2489) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (2509) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (2529) MOTOR_CTRL: L= 255  R=  37[0m
+[0;32mI (2549) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (2569) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (2589) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (2609) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (2629) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (2649) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (2669) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2689) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (2709) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (2729) MOTOR_CTRL: L= 255  R=  21[0m
+[0;32mI (2749) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (2769) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2789) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (2809) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (2829) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (2849) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (2869) MOTOR_CTRL: L= 174  R= 174[0m
+[0;32mI (2889) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (2909) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (2929) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (2949) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (2969) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (2989) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3009) MOTOR_CTRL: L= -85  R= 255[0m
+[0;32mI (3029) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3049) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (3069) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3089) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3109) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3129) MOTOR_CTRL: L= -85  R= 255[0m
+[0;32mI (3149) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (3169) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3189) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3209) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3229) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3249) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3269) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (3289) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3309) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3329) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (3349) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (3369) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (3389) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (3409) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3429) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (3449) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (3469) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3489) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (3509) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (3529) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (3549) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (3569) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (3589) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (3609) MOTOR_CTRL: L= -85  R= 255[0m
+[0;32mI (3629) MOTOR_CTRL: L= -83  R= 255[0m
+[0;32mI (3649) MOTOR_CTRL: L= -83  R= 255[0m
+[0;32mI (3669) MOTOR_CTRL: L= -81  R= 255[0m
+[0;32mI (3689) MOTOR_CTRL: L= -66  R= 255[0m
+[0;32mI (3709) MOTOR_CTRL: L= 145  R= 209[0m
+[0;32mI (3729) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (3749) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (3769) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (3789) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (3809) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (3829) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (3849) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (3869) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (3889) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (3909) MOTOR_CTRL: L= 255  R=   4[0m
+[0;32mI (3929) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (3949) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (3969) MOTOR_CTRL: L= 255  R=  40[0m
+[0;32mI (3989) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (4009) MOTOR_CTRL: L= 255  R=  57[0m
+[0;32mI (4029) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4049) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4069) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4089) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4109) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4129) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (4149) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4169) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4189) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4209) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4229) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4249) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (4269) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (4289) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4309) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (4329) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4349) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4369) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4389) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4409) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (4429) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4449) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4469) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4489) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4509) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4529) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4549) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4569) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4589) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4609) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4629) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (4649) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (4669) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (4689) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (4709) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (4729) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (4749) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4769) MOTOR_CTRL: L= 255  R=  19[0m
+[0;32mI (4789) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (4809) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (4829) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (4849) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (4869) MOTOR_CTRL: L= 255  R=  37[0m
+[0;32mI (4889) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (4909) MOTOR_CTRL: L= 255  R=  37[0m
+[0;32mI (4929) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (4949) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (4969) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (4989) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (5009) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (5029) MOTOR_CTRL: L= 255  R=  15[0m
+[0;32mI (5049) MOTOR_CTRL: L= 232  R=  96[0m
+[0;32mI (5069) MOTOR_CTRL: L= -63  R= 255[0m
+[0;32mI (5089) MOTOR_CTRL: L=-102  R= 255[0m
+[0;32mI (5109) MOTOR_CTRL: L=-103  R= 255[0m
+[0;32mI (5129) MOTOR_CTRL: L=-101  R= 255[0m
+[0;32mI (5149) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5169) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (5189) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (5209) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (5229) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5249) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (5269) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5289) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (5309) MOTOR_CTRL: L=-100  R= 255[0m
+[0;32mI (5329) MOTOR_CTRL: L=-102  R= 255[0m
+[0;32mI (5349) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5369) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (5389) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (5409) MOTOR_CTRL: L=-101  R= 255[0m
+[0;32mI (5429) MOTOR_CTRL: L=-100  R= 255[0m
+[0;32mI (5449) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5469) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (5489) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (5509) MOTOR_CTRL: L=-100  R= 255[0m
+[0;32mI (5529) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (5549) MOTOR_CTRL: L=-100  R= 255[0m
+[0;32mI (5569) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (5589) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (5609) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5629) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5649) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5669) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5689) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5709) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (5729) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5749) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5769) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (5789) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (5809) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5829) MOTOR_CTRL: L= -92  R= 255[0m
+[0;32mI (5849) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5869) MOTOR_CTRL: L= -92  R= 255[0m
+[0;32mI (5889) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5909) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (5929) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (5949) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5969) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (5989) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6009) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6029) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6049) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6069) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6089) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (6109) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6129) MOTOR_CTRL: L= -92  R= 255[0m
+[0;32mI (6149) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6169) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (6189) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (6209) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6229) MOTOR_CTRL: L= -92  R= 255[0m
+[0;32mI (6249) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6269) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6289) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6309) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (6329) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (6349) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (6369) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6389) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6409) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (6429) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (6449) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (6469) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6489) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (6509) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (6529) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6549) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (6569) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (6589) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (6609) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (6629) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (6649) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (6669) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (6689) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (6709) MOTOR_CTRL: L=-100  R= 255[0m
+[0;32mI (6729) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (6749) MOTOR_CTRL: L=-101  R= 255[0m
+[0;32mI (6769) MOTOR_CTRL: L=-101  R= 255[0m
+[0;32mI (6789) MOTOR_CTRL: L= -29  R= 255[0m
+[0;32mI (6809) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (6829) MOTOR_CTRL: L= 255  R=  56[0m
+[0;32mI (6849) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6869) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6889) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6909) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6929) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6949) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6969) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (6989) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7009) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7029) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7049) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7069) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7089) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7109) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7129) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7149) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7169) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7189) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7209) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7229) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7249) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7269) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7289) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7309) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7329) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7349) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7369) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7389) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7409) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7429) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7449) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7469) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7489) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7509) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7529) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7549) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7569) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7589) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7609) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (7629) MOTOR_CTRL: L= 255  R=  -7[0m
+[0;32mI (7649) MOTOR_CTRL: L= 255  R= -12[0m
+[0;32mI (7669) MOTOR_CTRL: L= 255  R= -10[0m
+[0;32mI (7689) MOTOR_CTRL: L= 255  R= -10[0m
+[0;32mI (7709) MOTOR_CTRL: L= 255  R= -54[0m
+[0;32mI (7729) MOTOR_CTRL: L= 255  R= -73[0m
+[0;32mI (7749) MOTOR_CTRL: L= 255  R= -72[0m
+[0;32mI (7769) MOTOR_CTRL: L= 255  R= -78[0m
+[0;32mI (7789) MOTOR_CTRL: L= 255  R= -80[0m
+[0;32mI (7809) MOTOR_CTRL: L= 255  R= -79[0m
+[0;32mI (7829) MOTOR_CTRL: L= 255  R= -79[0m
+[0;32mI (7849) MOTOR_CTRL: L= 255  R= -78[0m
+[0;32mI (7869) MOTOR_CTRL: L= 255  R= -78[0m
+[0;32mI (7889) MOTOR_CTRL: L= 255  R= -87[0m
+[0;32mI (7909) MOTOR_CTRL: L= 255  R= -74[0m
+[0;32mI (7929) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (7949) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (7969) MOTOR_CTRL: L= 255  R= -78[0m
+[0;32mI (7989) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (8009) MOTOR_CTRL: L= 255  R= -75[0m
+[0;32mI (8029) MOTOR_CTRL: L= 255  R= -73[0m
+[0;32mI (8049) MOTOR_CTRL: L= 255  R= -74[0m
+[0;32mI (8069) MOTOR_CTRL: L= 255  R= -77[0m
+[0;32mI (8089) MOTOR_CTRL: L= 255  R= -73[0m
+[0;32mI (8109) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (8129) MOTOR_CTRL: L= 255  R= -74[0m
+[0;32mI (8149) MOTOR_CTRL: L= 255  R= -71[0m
+[0;32mI (8169) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (8189) MOTOR_CTRL: L= 255  R= -72[0m
+[0;32mI (8209) MOTOR_CTRL: L= 255  R= -72[0m
+[0;32mI (8229) MOTOR_CTRL: L= 255  R= -74[0m
+[0;32mI (8249) MOTOR_CTRL: L= 255  R= -78[0m
+[0;32mI (8269) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (8289) MOTOR_CTRL: L= 255  R= -73[0m
+[0;32mI (8309) MOTOR_CTRL: L= 255  R= -74[0m
+[0;32mI (8329) MOTOR_CTRL: L= 255  R= -76[0m
+[0;32mI (8349) MOTOR_CTRL: L= 255  R= -71[0m
+[0;32mI (8369) MOTOR_CTRL: L= 255  R= -70[0m
+[0;32mI (8389) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (8409) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (8429) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (8449) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (8469) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (8489) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (8509) MOTOR_CTRL: L= 255  R= -61[0m
+[0;32mI (8529) MOTOR_CTRL: L= 255  R= -61[0m
+[0;32mI (8549) MOTOR_CTRL: L= 255  R= -62[0m
+[0;32mI (8569) MOTOR_CTRL: L= 255  R= -62[0m
+[0;32mI (8589) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (8609) MOTOR_CTRL: L= 255  R=  13[0m
+[0;32mI (8629) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (8649) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (8669) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (8689) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (8709) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (8729) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (8749) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (8769) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (8789) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (8809) MOTOR_CTRL: L= 255  R= -13[0m
+[0;32mI (8829) MOTOR_CTRL: L= 255  R=   5[0m
+[0;32mI (8849) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (8869) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (8889) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (8909) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (8929) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (8949) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (8969) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (8989) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9009) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9029) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9049) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (9069) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (9089) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9109) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (9129) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (9149) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9169) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (9189) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9209) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9229) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9249) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9269) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (9289) MOTOR_CTRL: L= 255  R=   9[0m
+[0;32mI (9309) MOTOR_CTRL: L= 255  R=  15[0m
+[0;32mI (9329) MOTOR_CTRL: L= 255  R=   9[0m
+[0;32mI (9349) MOTOR_CTRL: L= 255  R=  16[0m
+[0;32mI (9369) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (9389) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9409) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9429) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9449) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9469) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9489) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (9509) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9529) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9549) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (9569) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9589) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (9609) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (9629) MOTOR_CTRL: L= 255  R=  14[0m
+[0;32mI (9649) MOTOR_CTRL: L= 255  R=  16[0m
+[0;32mI (9669) MOTOR_CTRL: L= 255  R=  18[0m
+[0;32mI (9689) MOTOR_CTRL: L= 255  R=  18[0m
+[0;32mI (9709) MOTOR_CTRL: L= 255  R=  51[0m
+[0;32mI (9729) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (9749) MOTOR_CTRL: L= 255  R=  41[0m
+[0;32mI (9769) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (9789) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9809) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9829) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (9849) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (9869) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (9889) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9909) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9929) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (9949) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9969) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (9989) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (10009) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (10029) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (10049) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (10069) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (10089) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (10109) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (10129) MOTOR_CTRL: L= 255  R=  37[0m
+[0;32mI (10149) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (10169) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (10189) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (10209) MOTOR_CTRL: L= 255  R= -16[0m
+[0;32mI (10229) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (10249) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (10269) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10289) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (10309) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (10329) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (10349) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10369) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10389) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10409) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10429) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10449) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10469) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10489) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10509) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (10529) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10549) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (10569) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (10589) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (10609) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (10629) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (10649) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10669) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10689) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10709) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10729) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (10749) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (10769) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (10789) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10809) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10829) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10849) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10869) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10889) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10909) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (10929) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (10949) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (10969) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (10989) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (11009) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (11029) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (11049) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (11069) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (11089) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11109) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (11129) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (11149) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11169) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11189) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11209) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11229) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11249) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (11269) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (11289) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (11309) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (11329) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (11349) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (11369) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (11389) MOTOR_CTRL: L= 255  R=  17[0m
+[0;32mI (11409) MOTOR_CTRL: L= 255  R=  21[0m
+[0;32mI (11429) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (11449) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (11469) MOTOR_CTRL: L= 255  R=  88[0m
+[0;32mI (11489) MOTOR_CTRL: L= 106  R= 255[0m
+[0;32mI (11509) MOTOR_CTRL: L= -45  R= 255[0m
+[0;32mI (11529) MOTOR_CTRL: L= -63  R= 255[0m
+[0;32mI (11549) MOTOR_CTRL: L= -65  R= 255[0m
+[0;32mI (11569) MOTOR_CTRL: L= -63  R= 255[0m
+[0;32mI (11589) MOTOR_CTRL: L= -65  R= 255[0m
+[0;32mI (11609) MOTOR_CTRL: L= -65  R= 255[0m
+[0;32mI (11629) MOTOR_CTRL: L= -75  R= 255[0m
+[0;32mI (11649) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (11669) MOTOR_CTRL: L= -92  R= 255[0m
+[0;32mI (11689) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (11709) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (11729) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (11749) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (11769) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (11789) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (11809) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (11829) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (11849) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (11869) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (11889) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (11909) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (11929) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (11949) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (11969) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (11989) MOTOR_CTRL: L= -97  R= 255[0m
+[0;32mI (12009) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (12029) MOTOR_CTRL: L= -95  R= 255[0m
+[0;32mI (12049) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (12069) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (12089) MOTOR_CTRL: L= -98  R= 255[0m
+[0;32mI (12109) MOTOR_CTRL: L= -99  R= 255[0m
+[0;32mI (12129) MOTOR_CTRL: L= -96  R= 255[0m
+[0;32mI (12149) MOTOR_CTRL: L=-101  R= 255[0m
+[0;32mI (12169) MOTOR_CTRL: L=-184  R= 255[0m
+[0;32mI (12189) MOTOR_CTRL: L=-255  R=   2[0m
+[0;32mI (12209) MOTOR_CTRL: L=-255  R= -22[0m
+[0;32mI (12229) MOTOR_CTRL: L=-255  R=-125[0m
+[0;32mI (12249) MOTOR_CTRL: L=-255  R=-120[0m
+[0;32mI (12269) MOTOR_CTRL: L=-255  R=-195[0m
+[0;32mI (12289) MOTOR_CTRL: L=-254  R=-254[0m
+[0;32mI (12309) MOTOR_CTRL: L=-146  R=-255[0m
+[0;32mI (12329) MOTOR_CTRL: L=-100  R=-255[0m
+[0;32mI (12349) MOTOR_CTRL: L= -98  R=-255[0m
+[0;32mI (12369) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (12389) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (12409) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (12429) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (12449) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12469) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (12489) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12509) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12529) MOTOR_CTRL: L= -92  R=-255[0m
+[0;32mI (12549) MOTOR_CTRL: L= -88  R=-255[0m
+[0;32mI (12569) MOTOR_CTRL: L= -92  R=-255[0m
+[0;32mI (12589) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (12609) MOTOR_CTRL: L= -88  R=-255[0m
+[0;32mI (12629) MOTOR_CTRL: L= -89  R=-255[0m
+[0;32mI (12649) MOTOR_CTRL: L= -88  R=-255[0m
+[0;32mI (12669) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (12689) MOTOR_CTRL: L= -88  R=-255[0m
+[0;32mI (12709) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (12729) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (12749) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (12769) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (12789) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12809) MOTOR_CTRL: L= -92  R=-255[0m
+[0;32mI (12829) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12849) MOTOR_CTRL: L= -89  R=-255[0m
+[0;32mI (12869) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12889) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (12909) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12929) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (12949) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (12969) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (12989) MOTOR_CTRL: L= -91  R=-255[0m
+[0;32mI (13009) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (13029) MOTOR_CTRL: L= 255  R=  94[0m
+[0;32mI (13049) MOTOR_CTRL: L= 255  R=  93[0m
+[0;32mI (13069) MOTOR_CTRL: L= 255  R=  93[0m
+[0;32mI (13089) MOTOR_CTRL: L= 255  R=  96[0m
+[0;32mI (13109) MOTOR_CTRL: L= 255  R=  96[0m
+[0;32mI (13129) MOTOR_CTRL: L= 255  R= 100[0m
+[0;32mI (13149) MOTOR_CTRL: L= 255  R=  96[0m
+[0;32mI (13169) MOTOR_CTRL: L= 255  R= 101[0m
+[0;32mI (13189) MOTOR_CTRL: L= 255  R= 101[0m
+[0;32mI (13209) MOTOR_CTRL: L= 255  R= 104[0m
+[0;32mI (13229) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13249) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13269) MOTOR_CTRL: L= 255  R= 105[0m
+[0;32mI (13289) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13309) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13329) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13349) MOTOR_CTRL: L= 255  R= 105[0m
+[0;32mI (13369) MOTOR_CTRL: L= 255  R= 104[0m
+[0;32mI (13389) MOTOR_CTRL: L= 255  R= 100[0m
+[0;32mI (13409) MOTOR_CTRL: L= 255  R= 102[0m
+[0;32mI (13429) MOTOR_CTRL: L= 255  R= 102[0m
+[0;32mI (13449) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13469) MOTOR_CTRL: L= 255  R= 104[0m
+[0;32mI (13489) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13509) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13529) MOTOR_CTRL: L= 255  R= 101[0m
+[0;32mI (13549) MOTOR_CTRL: L= 255  R= 102[0m
+[0;32mI (13569) MOTOR_CTRL: L= 255  R= 103[0m
+[0;32mI (13589) MOTOR_CTRL: L= 255  R= 100[0m
+[0;32mI (13609) MOTOR_CTRL: L= 255  R=  94[0m
+[0;32mI (13629) MOTOR_CTRL: L= 255  R=  93[0m
+[0;32mI (13649) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (13669) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (13689) MOTOR_CTRL: L=  11  R=-255[0m
+[0;32mI (13709) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (13729) MOTOR_CTRL: L= -92  R=-255[0m
+[0;32mI (13749) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (13769) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (13789) MOTOR_CTRL: L= -90  R=-255[0m
+[0;32mI (13809) MOTOR_CTRL: L= -89  R=-255[0m
+[0;32mI (13829) MOTOR_CTRL: L= -87  R=-255[0m
+[0;32mI (13849) MOTOR_CTRL: L= -83  R=-255[0m
+[0;32mI (13869) MOTOR_CTRL: L= -84  R=-255[0m
+[0;32mI (13889) MOTOR_CTRL: L= -82  R=-255[0m
+[0;32mI (13909) MOTOR_CTRL: L= -81  R=-255[0m
+[0;32mI (13929) MOTOR_CTRL: L= -78  R=-255[0m
+[0;32mI (13949) MOTOR_CTRL: L= -77  R=-255[0m
+[0;32mI (13969) MOTOR_CTRL: L= -82  R=-255[0m
+[0;32mI (13989) MOTOR_CTRL: L= -80  R=-255[0m
+[0;32mI (14009) MOTOR_CTRL: L= -77  R=-255[0m
+[0;32mI (14029) MOTOR_CTRL: L= -80  R=-255[0m
+[0;32mI (14049) MOTOR_CTRL: L= -79  R=-255[0m
+[0;32mI (14069) MOTOR_CTRL: L=   2  R=-255[0m
+[0;32mI (14089) MOTOR_CTRL: L=   2  R=-255[0m
+[0;32mI (14109) MOTOR_CTRL: L= 255  R=-178[0m
+[0;32mI (14129) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14149) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (14169) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14189) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (14209) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14229) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14249) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14269) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (14289) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14309) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14329) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14349) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (14369) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14389) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (14409) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (14429) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14449) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14469) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (14489) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (14509) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (14529) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (14549) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (14569) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14589) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (14609) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (14629) MOTOR_CTRL: L= 255  R= -62[0m
+[0;32mI (14649) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (14669) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (14689) MOTOR_CTRL: L= 255  R= -66[0m
+[0;32mI (14709) MOTOR_CTRL: L= 255  R=   7[0m
+[0;32mI (14729) MOTOR_CTRL: L= 255  R=   6[0m
+[0;32mI (14749) MOTOR_CTRL: L= 255  R=   4[0m
+[0;32mI (14769) MOTOR_CTRL: L= 255  R=   3[0m
+[0;32mI (14789) MOTOR_CTRL: L= 254  R=  72[0m
+[0;32mI (14809) MOTOR_CTRL: L= 163  R= 163[0m
+[0;32mI (14829) MOTOR_CTRL: L=  65  R= 255[0m
+[0;32mI (14849) MOTOR_CTRL: L= -77  R= 255[0m
+[0;32mI (14869) MOTOR_CTRL: L= -75  R= 255[0m
+[0;32mI (14889) MOTOR_CTRL: L= -73  R= 255[0m
+[0;32mI (14909) MOTOR_CTRL: L= -57  R= 255[0m
+[0;32mI (14929) MOTOR_CTRL: L= -67  R= 255[0m
+[0;32mI (14949) MOTOR_CTRL: L= -72  R= 255[0m
+[0;32mI (14969) MOTOR_CTRL: L= -73  R= 255[0m
+[0;32mI (14989) MOTOR_CTRL: L= -77  R= 255[0m
+[0;32mI (15009) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (15029) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15049) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15069) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15089) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15109) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15129) MOTOR_CTRL: L= -94  R= 255[0m
+[0;32mI (15149) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (15169) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15189) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (15209) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15229) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15249) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (15269) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (15289) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15309) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (15329) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (15349) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (15369) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15389) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15409) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15429) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15449) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (15469) MOTOR_CTRL: L= -85  R= 255[0m
+[0;32mI (15489) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (15509) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (15529) MOTOR_CTRL: L= -85  R= 255[0m
+[0;32mI (15549) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15569) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (15589) MOTOR_CTRL: L= -86  R= 255[0m
+[0;32mI (15609) MOTOR_CTRL: L= -88  R= 255[0m
+[0;32mI (15629) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (15649) MOTOR_CTRL: L= -90  R= 255[0m
+[0;32mI (15669) MOTOR_CTRL: L=-255  R=  21[0m
+[0;32mI (15689) MOTOR_CTRL: L=-255  R= -28[0m
+[0;32mI (15709) MOTOR_CTRL: L=-255  R=-206[0m
+[0;32mI (15729) MOTOR_CTRL: L=-247  R=-255[0m
+[0;32mI (15749) MOTOR_CTRL: L=-241  R=-255[0m
+[0;32mI (15769) MOTOR_CTRL: L=-240  R=-255[0m
+[0;32mI (15789) MOTOR_CTRL: L=-236  R=-255[0m
+[0;32mI (15809) MOTOR_CTRL: L=-237  R=-255[0m
+[0;32mI (15829) MOTOR_CTRL: L=-238  R=-255[0m
+[0;32mI (15849) MOTOR_CTRL: L=-238  R=-255[0m
+[0;32mI (15869) MOTOR_CTRL: L=-241  R=-255[0m
+[0;32mI (15889) MOTOR_CTRL: L=-242  R=-255[0m
+[0;32mI (15909) MOTOR_CTRL: L=-243  R=-255[0m
+[0;32mI (15929) MOTOR_CTRL: L=-245  R=-255[0m
+[0;32mI (15949) MOTOR_CTRL: L=-245  R=-255[0m
+[0;32mI (15969) MOTOR_CTRL: L=-240  R=-255[0m
+[0;32mI (15989) MOTOR_CTRL: L=-240  R=-255[0m
+[0;32mI (16009) MOTOR_CTRL: L=-245  R=-255[0m
+[0;32mI (16029) MOTOR_CTRL: L=-242  R=-255[0m
+[0;32mI (16049) MOTOR_CTRL: L=-245  R=-255[0m
+[0;32mI (16069) MOTOR_CTRL: L=-241  R=-255[0m
+[0;32mI (16089) MOTOR_CTRL: L=-241  R=-255[0m
+[0;32mI (16109) MOTOR_CTRL: L=-239  R=-255[0m
+[0;32mI (16129) MOTOR_CTRL: L=-239  R=-255[0m
+[0;32mI (16149) MOTOR_CTRL: L=-168  R=-255[0m
+[0;32mI (16169) MOTOR_CTRL: L= 169  R=-155[0m
+[0;32mI (16189) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (16209) MOTOR_CTRL: L= 255  R=  13[0m
+[0;32mI (16229) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (16249) MOTOR_CTRL: L= 255  R=  18[0m
+[0;32mI (16269) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (16289) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (16309) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (16329) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (16349) MOTOR_CTRL: L= 255  R=  21[0m
+[0;32mI (16369) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (16389) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (16409) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (16429) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (16449) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (16469) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (16489) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (16509) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (16529) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (16549) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (16569) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (16589) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (16609) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (16629) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (16649) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (16669) MOTOR_CTRL: L= 255  R=  18[0m
+[0;32mI (16689) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (16709) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (16729) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (16749) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (16769) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (16789) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (16809) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (16829) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (16849) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (16869) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (16889) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (16909) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (16929) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (16949) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (16969) MOTOR_CTRL: L= 255  R= -69[0m
+[0;32mI (16989) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (17009) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17029) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (17049) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17069) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (17089) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (17109) MOTOR_CTRL: L= 255  R= -63[0m
+[0;32mI (17129) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17149) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (17169) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17189) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (17209) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17229) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (17249) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (17269) MOTOR_CTRL: L= 255  R= -64[0m
+[0;32mI (17289) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (17309) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (17329) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (17349) MOTOR_CTRL: L= 255  R=  12[0m
+[0;32mI (17369) MOTOR_CTRL: L= 255  R=  10[0m
+[0;32mI (17389) MOTOR_CTRL: L= 255  R=  10[0m
+[0;32mI (17409) MOTOR_CTRL: L= 255  R=  13[0m
+[0;32mI (17429) MOTOR_CTRL: L= 255  R=  13[0m
+[0;32mI (17449) MOTOR_CTRL: L= 237  R=  91[0m
+[0;32mI (17469) MOTOR_CTRL: L=  93  R= 237[0m
+[0;32mI (17489) MOTOR_CTRL: L= -78  R= 255[0m
+[0;32mI (17509) MOTOR_CTRL: L= -87  R= 255[0m
+[0;32mI (17529) MOTOR_CTRL: L= -91  R= 255[0m
+[0;32mI (17549) MOTOR_CTRL: L=-152  R= 255[0m
+[0;32mI (17569) MOTOR_CTRL: L=-150  R= 255[0m
+[0;32mI (17589) MOTOR_CTRL: L=-148  R= 255[0m
+[0;32mI (17609) MOTOR_CTRL: L=-147  R= 255[0m
+[0;32mI (17629) MOTOR_CTRL: L=-152  R= 255[0m
+[0;32mI (17649) MOTOR_CTRL: L=-153  R= 255[0m
+[0;32mI (17669) MOTOR_CTRL: L=-152  R= 255[0m
+[0;32mI (17689) MOTOR_CTRL: L=-150  R= 255[0m
+[0;32mI (17709) MOTOR_CTRL: L=-145  R= 255[0m
+[0;32mI (17729) MOTOR_CTRL: L=-148  R= 255[0m
+[0;32mI (17749) MOTOR_CTRL: L=-147  R= 255[0m
+[0;32mI (17769) MOTOR_CTRL: L=-149  R= 255[0m
+[0;32mI (17789) MOTOR_CTRL: L=-148  R= 255[0m
+[0;32mI (17809) MOTOR_CTRL: L=-150  R= 255[0m
+[0;32mI (17829) MOTOR_CTRL: L=-147  R= 255[0m
+[0;32mI (17849) MOTOR_CTRL: L=-250  R= 250[0m
+[0;32mI (17869) MOTOR_CTRL: L=-255  R=  -3[0m
+[0;32mI (17889) MOTOR_CTRL: L=-255  R= -19[0m
+[0;32mI (17909) MOTOR_CTRL: L=-255  R=-240[0m
+[0;32mI (17929) MOTOR_CTRL: L=-139  R=-255[0m
+[0;32mI (17949) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (17969) MOTOR_CTRL: L=-102  R=-255[0m
+[0;32mI (17989) MOTOR_CTRL: L=-102  R=-255[0m
+[0;32mI (18009) MOTOR_CTRL: L= -99  R=-255[0m
+[0;32mI (18029) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (18049) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18069) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18089) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18109) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18129) MOTOR_CTRL: L= -69  R=-255[0m
+[0;32mI (18149) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (18169) MOTOR_CTRL: L=   0  R=-255[0m
+[0;32mI (18189) MOTOR_CTRL: L=   2  R=-255[0m
+[0;32mI (18209) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (18229) MOTOR_CTRL: L=   2  R=-255[0m
+[0;32mI (18249) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (18269) MOTOR_CTRL: L=   3  R=-255[0m
+[0;32mI (18289) MOTOR_CTRL: L= 255  R= -68[0m
+[0;32mI (18309) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (18329) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18349) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18369) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18389) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18409) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18429) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18449) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (18469) MOTOR_CTRL: L= 255  R=  85[0m
+[0;32mI (18489) MOTOR_CTRL: L= 255  R=  83[0m
+[0;32mI (18509) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (18529) MOTOR_CTRL: L= 255  R=  82[0m
+[0;32mI (18549) MOTOR_CTRL: L= 255  R= 146[0m
+[0;32mI (18569) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (18589) MOTOR_CTRL: L= 147  R= 255[0m
+[0;32mI (18609) MOTOR_CTRL: L=  15  R= 255[0m
+[0;32mI (18629) MOTOR_CTRL: L=  35  R= 255[0m
+[0;32mI (18649) MOTOR_CTRL: L=  10  R= 255[0m
+[0;32mI (18669) MOTOR_CTRL: L=   6  R= 255[0m
+[0;32mI (18689) MOTOR_CTRL: L= -77  R= 255[0m
+[0;32mI (18709) MOTOR_CTRL: L= -93  R= 255[0m
+[0;32mI (18729) MOTOR_CTRL: L= -89  R= 255[0m
+[0;32mI (18749) MOTOR_CTRL: L=-199  R= 255[0m
+[0;32mI (18769) MOTOR_CTRL: L=-255  R= 186[0m
+[0;32mI (18789) MOTOR_CTRL: L=-255  R=  -1[0m
+[0;32mI (18809) MOTOR_CTRL: L=-255  R= -19[0m
+[0;32mI (18829) MOTOR_CTRL: L=-255  R= -23[0m
+[0;32mI (18849) MOTOR_CTRL: L=-255  R=-200[0m
+[0;32mI (18869) MOTOR_CTRL: L=-185  R=-255[0m
+[0;32mI (18889) MOTOR_CTRL: L= -96  R=-255[0m
+[0;32mI (18909) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18929) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (18949) MOTOR_CTRL: L= -54  R=-255[0m
+[0;32mI (18969) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (18989) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19009) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19029) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19049) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (19069) MOTOR_CTRL: L= 255  R= -41[0m
+[0;32mI (19089) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (19109) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (19129) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (19149) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (19169) MOTOR_CTRL: L= 255  R=   0[0m
+[0;32mI (19189) MOTOR_CTRL: L= 255  R=  80[0m
+[0;32mI (19209) MOTOR_CTRL: L= 255  R=  79[0m
+[0;32mI (19229) MOTOR_CTRL: L= 255  R=  82[0m
+[0;32mI (19249) MOTOR_CTRL: L= 255  R=  98[0m
+[0;32mI (19269) MOTOR_CTRL: L= 255  R= 173[0m
+[0;32mI (19289) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (19309) MOTOR_CTRL: L=  33  R= 255[0m
+[0;32mI (19329) MOTOR_CTRL: L=  31  R= 255[0m
+[0;32mI (19349) MOTOR_CTRL: L= -61  R= 255[0m
+[0;32mI (19369) MOTOR_CTRL: L= -66  R= 255[0m
+[0;32mI (19389) MOTOR_CTRL: L=-190  R= 255[0m
+[0;32mI (19409) MOTOR_CTRL: L=-251  R= 251[0m
+[0;32mI (19429) MOTOR_CTRL: L=-255  R=  63[0m
+[0;32mI (19449) MOTOR_CTRL: L=-255  R=  -6[0m
+[0;32mI (19469) MOTOR_CTRL: L=-255  R= -32[0m
+[0;32mI (19489) MOTOR_CTRL: L=-238  R=-255[0m
+[0;32mI (19509) MOTOR_CTRL: L= -89  R=-255[0m
+[0;32mI (19529) MOTOR_CTRL: L= -88  R=-255[0m
+[0;32mI (19549) MOTOR_CTRL: L= -85  R=-255[0m
+[0;32mI (19569) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19589) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19609) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19629) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19649) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (19669) MOTOR_CTRL: L=   3  R=-255[0m
+[0;32mI (19689) MOTOR_CTRL: L= 210  R=-255[0m
+[0;32mI (19709) MOTOR_CTRL: L= 255  R=-206[0m
+[0;32mI (19729) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (19749) MOTOR_CTRL: L= 255  R=  36[0m
+[0;32mI (19769) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (19789) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (19809) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (19829) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (19849) MOTOR_CTRL: L= 255  R=  40[0m
+[0;32mI (19869) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (19889) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (19909) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (19929) MOTOR_CTRL: L= 255  R=  45[0m
+[0;32mI (19949) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (19969) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (19989) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (20009) MOTOR_CTRL: L= 255  R=  41[0m
+[0;32mI (20029) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (20049) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (20069) MOTOR_CTRL: L= 255  R=  43[0m
+[0;32mI (20089) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (20109) MOTOR_CTRL: L= 255  R=  43[0m
+[0;32mI (20129) MOTOR_CTRL: L= 255  R=  46[0m
+[0;32mI (20149) MOTOR_CTRL: L= 255  R=  37[0m
+[0;32mI (20169) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (20189) MOTOR_CTRL: L= 255  R=  35[0m
+[0;32mI (20209) MOTOR_CTRL: L= 255  R=  40[0m
+[0;32mI (20229) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (20249) MOTOR_CTRL: L= 218  R= -90[0m
+[0;32mI (20269) MOTOR_CTRL: L=-102  R=-255[0m
+[0;32mI (20289) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (20309) MOTOR_CTRL: L= -97  R=-255[0m
+[0;32mI (20329) MOTOR_CTRL: L= -94  R=-255[0m
+[0;32mI (20349) MOTOR_CTRL: L= -95  R=-255[0m
+[0;32mI (20369) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (20389) MOTOR_CTRL: L= -96  R=-255[0m
+[0;32mI (20409) MOTOR_CTRL: L= -94  R=-255[0m
+[0;32mI (20429) MOTOR_CTRL: L=-100  R=-255[0m
+[0;32mI (20449) MOTOR_CTRL: L=-106  R=-255[0m
+[0;32mI (20469) MOTOR_CTRL: L=-111  R=-255[0m
+[0;32mI (20489) MOTOR_CTRL: L=-110  R=-255[0m
+[0;32mI (20509) MOTOR_CTRL: L=-111  R=-255[0m
+[0;32mI (20529) MOTOR_CTRL: L=-112  R=-255[0m
+[0;32mI (20549) MOTOR_CTRL: L=-113  R=-255[0m
+[0;32mI (20569) MOTOR_CTRL: L=-113  R=-255[0m
+[0;32mI (20589) MOTOR_CTRL: L=-113  R=-255[0m
+[0;32mI (20609) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20629) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20649) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20669) MOTOR_CTRL: L=-117  R=-255[0m
+[0;32mI (20689) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20709) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20729) MOTOR_CTRL: L=-117  R=-255[0m
+[0;32mI (20749) MOTOR_CTRL: L=-119  R=-255[0m
+[0;32mI (20769) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20789) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20809) MOTOR_CTRL: L=-112  R=-255[0m
+[0;32mI (20829) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20849) MOTOR_CTRL: L=-116  R=-255[0m
+[0;32mI (20869) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20889) MOTOR_CTRL: L=-113  R=-255[0m
+[0;32mI (20909) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20929) MOTOR_CTRL: L=-115  R=-255[0m
+[0;32mI (20949) MOTOR_CTRL: L=-117  R=-255[0m
+[0;32mI (20969) MOTOR_CTRL: L=-119  R=-255[0m
+[0;32mI (20989) MOTOR_CTRL: L=-119  R=-255[0m
+[0;32mI (21009) MOTOR_CTRL: L=-117  R=-255[0m
+[0;32mI (21029) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21049) MOTOR_CTRL: L=-121  R=-255[0m
+[0;32mI (21069) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21089) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21109) MOTOR_CTRL: L=-121  R=-255[0m
+[0;32mI (21129) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21149) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21169) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21189) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21209) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21229) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21249) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21269) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21289) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21309) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21329) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21349) MOTOR_CTRL: L=-127  R=-255[0m
+[0;32mI (21369) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21389) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21409) MOTOR_CTRL: L=-129  R=-255[0m
+[0;32mI (21429) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21449) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21469) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21489) MOTOR_CTRL: L=-130  R=-255[0m
+[0;32mI (21509) MOTOR_CTRL: L=-129  R=-255[0m
+[0;32mI (21529) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21549) MOTOR_CTRL: L=-130  R=-255[0m
+[0;32mI (21569) MOTOR_CTRL: L=-132  R=-255[0m
+[0;32mI (21589) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (21609) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21629) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21649) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21669) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21689) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21709) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21729) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21749) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21769) MOTOR_CTRL: L=-125  R=-255[0m
+[0;32mI (21789) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21809) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21829) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21849) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (21869) MOTOR_CTRL: L=-125  R=-255[0m
+[0;32mI (21889) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21909) MOTOR_CTRL: L=-122  R=-255[0m
+[0;32mI (21929) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (21949) MOTOR_CTRL: L=-125  R=-255[0m
+[0;32mI (21969) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (21989) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (22009) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (22029) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (22049) MOTOR_CTRL: L=-124  R=-255[0m
+[0;32mI (22069) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (22089) MOTOR_CTRL: L=-127  R=-255[0m
+[0;32mI (22109) MOTOR_CTRL: L=-127  R=-255[0m
+[0;32mI (22129) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (22149) MOTOR_CTRL: L=-127  R=-255[0m
+[0;32mI (22169) MOTOR_CTRL: L=-127  R=-255[0m
+[0;32mI (22189) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (22209) MOTOR_CTRL: L=-125  R=-255[0m
+[0;32mI (22229) MOTOR_CTRL: L=-126  R=-255[0m
+[0;32mI (22249) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (22269) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (22289) MOTOR_CTRL: L=-129  R=-255[0m
+[0;32mI (22309) MOTOR_CTRL: L=-128  R=-255[0m
+[0;32mI (22329) MOTOR_CTRL: L=-130  R=-255[0m
+[0;32mI (22349) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22369) MOTOR_CTRL: L=-130  R=-255[0m
+[0;32mI (22389) MOTOR_CTRL: L=-129  R=-255[0m
+[0;32mI (22409) MOTOR_CTRL: L=-129  R=-255[0m
+[0;32mI (22429) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22449) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22469) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22489) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22509) MOTOR_CTRL: L=-132  R=-255[0m
+[0;32mI (22529) MOTOR_CTRL: L=-132  R=-255[0m
+[0;32mI (22549) MOTOR_CTRL: L=-131  R=-255[0m
+[0;32mI (22569) MOTOR_CTRL: L=-133  R=-255[0m
+[0;32mI (22589) MOTOR_CTRL: L=-133  R=-255[0m
+[0;32mI (22609) MOTOR_CTRL: L=-132  R=-255[0m
+[0;32mI (22629) MOTOR_CTRL: L=-132  R=-255[0m
+[0;32mI (22649) MOTOR_CTRL: L=-123  R=-255[0m
+[0;32mI (22669) MOTOR_CTRL: L=-104  R=-255[0m
+[0;32mI (22689) MOTOR_CTRL: L= -93  R=-255[0m
+[0;32mI (22709) MOTOR_CTRL: L= -79  R=-255[0m
+[0;32mI (22729) MOTOR_CTRL: L= -75  R=-255[0m
+[0;32mI (22749) MOTOR_CTRL: L= -71  R=-255[0m
+[0;32mI (22769) MOTOR_CTRL: L= -74  R=-255[0m
+[0;32mI (22789) MOTOR_CTRL: L= -73  R=-255[0m
+[0;32mI (22809) MOTOR_CTRL: L= -71  R=-255[0m
+[0;32mI (22829) MOTOR_CTRL: L= -73  R=-255[0m
+[0;32mI (22849) MOTOR_CTRL: L= -73  R=-255[0m
+[0;32mI (22869) MOTOR_CTRL: L= -62  R=-255[0m
+[0;32mI (22889) MOTOR_CTRL: L= -58  R=-255[0m
+[0;32mI (22909) MOTOR_CTRL: L= -54  R=-255[0m
+[0;32mI (22929) MOTOR_CTRL: L= -47  R=-255[0m
+[0;32mI (22949) MOTOR_CTRL: L= -46  R=-255[0m
+[0;32mI (22969) MOTOR_CTRL: L= -46  R=-255[0m
+[0;32mI (22989) MOTOR_CTRL: L= -49  R=-255[0m
+[0;32mI (23009) MOTOR_CTRL: L= -46  R=-255[0m
+[0;32mI (23029) MOTOR_CTRL: L= -42  R=-255[0m
+[0;32mI (23049) MOTOR_CTRL: L= -40  R=-255[0m
+[0;32mI (23069) MOTOR_CTRL: L= -41  R=-255[0m
+[0;32mI (23089) MOTOR_CTRL: L= -44  R=-255[0m
+[0;32mI (23109) MOTOR_CTRL: L= -44  R=-255[0m
+[0;32mI (23129) MOTOR_CTRL: L= -45  R=-255[0m
+[0;32mI (23149) MOTOR_CTRL: L= -44  R=-255[0m
+[0;32mI (23169) MOTOR_CTRL: L= -40  R=-255[0m
+[0;32mI (23189) MOTOR_CTRL: L= -37  R=-255[0m
+[0;32mI (23209) MOTOR_CTRL: L= -39  R=-255[0m
+[0;32mI (23229) MOTOR_CTRL: L= -38  R=-255[0m
+[0;32mI (23249) MOTOR_CTRL: L= -37  R=-255[0m
+[0;32mI (23269) MOTOR_CTRL: L= -38  R=-255[0m
+[0;32mI (23289) MOTOR_CTRL: L= -35  R=-255[0m
+[0;32mI (23309) MOTOR_CTRL: L= -33  R=-255[0m
+[0;32mI (23329) MOTOR_CTRL: L= -33  R=-255[0m
+[0;32mI (23349) MOTOR_CTRL: L= -33  R=-255[0m
+[0;32mI (23369) MOTOR_CTRL: L= -35  R=-255[0m
+[0;32mI (23389) MOTOR_CTRL: L= -35  R=-255[0m
+[0;32mI (23409) MOTOR_CTRL: L= -31  R=-255[0m
+[0;32mI (23429) MOTOR_CTRL: L= -35  R=-255[0m
+[0;32mI (23449) MOTOR_CTRL: L= -31  R=-255[0m
+[0;32mI (23469) MOTOR_CTRL: L= -29  R=-255[0m
+[0;32mI (23489) MOTOR_CTRL: L= -29  R=-255[0m
+[0;32mI (23509) MOTOR_CTRL: L= -31  R=-255[0m
+[0;32mI (23529) MOTOR_CTRL: L= -28  R=-255[0m
+[0;32mI (23549) MOTOR_CTRL: L= -22  R=-255[0m
+[0;32mI (23569) MOTOR_CTRL: L= -31  R=-255[0m
+[0;32mI (23589) MOTOR_CTRL: L= -16  R=-255[0m
+[0;32mI (23609) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (23629) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (23649) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (23669) MOTOR_CTRL: L=   1  R=-255[0m
+[0;32mI (23689) MOTOR_CTRL: L=   3  R=-255[0m
+[0;32mI (23709) MOTOR_CTRL: L= 206  R=-206[0m
+[0;32mI (23729) MOTOR_CTRL: L= 255  R=  38[0m
+[0;32mI (23749) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (23769) MOTOR_CTRL: L= 255  R=  45[0m
+[0;32mI (23789) MOTOR_CTRL: L= 255  R=  41[0m
+[0;32mI (23809) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (23829) MOTOR_CTRL: L= 255  R=  51[0m
+[0;32mI (23849) MOTOR_CTRL: L= 255  R=  45[0m
+[0;32mI (23869) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (23889) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (23909) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (23929) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (23949) MOTOR_CTRL: L= 255  R=  46[0m
+[0;32mI (23969) MOTOR_CTRL: L= 255  R=  45[0m
+[0;32mI (23989) MOTOR_CTRL: L= 255  R=  42[0m
+[0;32mI (24009) MOTOR_CTRL: L= 255  R=  43[0m
+[0;32mI (24029) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (24049) MOTOR_CTRL: L= 255  R=  49[0m
+[0;32mI (24069) MOTOR_CTRL: L= 255  R=  47[0m
+[0;32mI (24089) MOTOR_CTRL: L= 255  R=  51[0m
+[0;32mI (24109) MOTOR_CTRL: L= 255  R=  53[0m
+[0;32mI (24129) MOTOR_CTRL: L= 255  R=  54[0m
+[0;32mI (24149) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (24169) MOTOR_CTRL: L= 255  R=  20[0m
+[0;32mI (24189) MOTOR_CTRL: L= 255  R=  88[0m
+[0;32mI (24209) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (24229) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (24249) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (24269) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (24289) MOTOR_CTRL: L= 255  R=  89[0m
+[0;32mI (24309) MOTOR_CTRL: L= 255  R=  89[0m
+[0;32mI (24329) MOTOR_CTRL: L= 255  R=  90[0m
+[0;32mI (24349) MOTOR_CTRL: L= 255  R=  90[0m
+[0;32mI (24369) MOTOR_CTRL: L= 255  R=  89[0m
+[0;32mI (24389) MOTOR_CTRL: L= 255  R=  89[0m
+[0;32mI (24409) MOTOR_CTRL: L= 255  R=  87[0m
+[0;32mI (24429) MOTOR_CTRL: L= 255  R=  96[0m
+[0;32mI (24449) MOTOR_CTRL: L= 255  R= 145[0m
+[0;32mI (24469) MOTOR_CTRL: L= 255  R= 194[0m
+[0;32mI (24489) MOTOR_CTRL: L= 255  R= 222[0m
+[0;32mI (24509) MOTOR_CTRL: L= 255  R= 250[0m
+[0;32mI (24529) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (24549) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (24569) MOTOR_CTRL: L= 255  R= 252[0m
+[0;32mI (24589) MOTOR_CTRL: L= 255  R= 253[0m
+[0;32mI (24609) MOTOR_CTRL: L= 255  R= 248[0m
+[0;32mI (24629) MOTOR_CTRL: L= 255  R= 250[0m
+[0;32mI (24649) MOTOR_CTRL: L= 255  R= 251[0m
+[0;32mI (24669) MOTOR_CTRL: L= 255  R= 251[0m
+[0;32mI (24689) MOTOR_CTRL: L= 255  R= 248[0m
+[0;32mI (24709) MOTOR_CTRL: L= 255  R= 246[0m
+[0;32mI (24729) MOTOR_CTRL: L= 255  R= 246[0m
+[0;32mI (24749) MOTOR_CTRL: L= 255  R= 246[0m
+[0;32mI (24769) MOTOR_CTRL: L= 255  R= 246[0m
+[0;32mI (24789) MOTOR_CTRL: L= 255  R= 250[0m
+[0;32mI (24809) MOTOR_CTRL: L= 255  R= 251[0m
+[0;32mI (24829) MOTOR_CTRL: L= 255  R= 251[0m
+[0;32mI (24849) MOTOR_CTRL: L= 255  R= 250[0m
+[0;32mI (24869) MOTOR_CTRL: L= 255  R= 252[0m
+[0;32mI (24889) MOTOR_CTRL: L= 255  R= 255[0m
+[0;32mI (24909) MOTOR_CTRL: L= 255  R= 244[0m
+[0;32mI (24929) MOTOR_CTRL: L= 255  R= 241[0m
+[0;32mI (24949) MOTOR_CTRL: L= 255  R= 242[0m
+[0;32mI (24969) MOTOR_CTRL: L= 255  R= 237[0m
+[0;32mI (24989) MOTOR_CTRL: L= 255  R= 235[0m
+[0;32mI (25009) MOTOR_CTRL: L= 255  R= 235[0m
+[0;32mI (25029) MOTOR_CTRL: L= 255  R= 235[0m
+[0;32mI (25049) MOTOR_CTRL: L= 255  R= 231[0m
+[0;32mI (25069) MOTOR_CTRL: L= 255  R= 228[0m
+[0;32mI (25089) MOTOR_CTRL: L= 255  R= 229[0m
+[0;32mI (25109) MOTOR_CTRL: L= 255  R= 227[0m
+[0;32mI (25129) MOTOR_CTRL: L= 255  R= 226[0m
+[0;32mI (25149) MOTOR_CTRL: L= 255  R= 218[0m
+[0;32mI (25169) MOTOR_CTRL: L= 255  R= 216[0m
+[0;32mI (25189) MOTOR_CTRL: L= 255  R= 213[0m
+[0;32mI (25209) MOTOR_CTRL: L= 255  R= 211[0m
+[0;32mI (25229) MOTOR_CTRL: L= 255  R= 211[0m
+[0;32mI (25249) MOTOR_CTRL: L= 255  R= 211[0m
+[0;32mI (25269) MOTOR_CTRL: L= 255  R= 212[0m
+[0;32mI (25289) MOTOR_CTRL: L= 255  R= 212[0m
+[0;32mI (25309) MOTOR_CTRL: L= 255  R= 213[0m
+[0;32mI (25329) MOTOR_CTRL: L= 255  R= 213[0m
+[0;32mI (25349) MOTOR_CTRL: L= 255  R= 206[0m
+[0;32mI (25369) MOTOR_CTRL: L= 255  R= 180[0m
+[0;32mI (25389) MOTOR_CTRL: L= 255  R= 158[0m
+[0;32mI (25409) MOTOR_CTRL: L= 255  R= 127[0m
+[0;32mI (25429) MOTOR_CTRL: L= 255  R= 120[0m
+[0;32mI (25449) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (25469) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (25489) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (25509) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (25529) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (25549) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (25569) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (25589) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (25609) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (25629) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (25649) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (25669) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (25689) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (25709) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (25729) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (25749) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (25769) MOTOR_CTRL: L= 255  R=  45[0m
+[0;32mI (25789) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (25809) MOTOR_CTRL: L= 255  R=  40[0m
+[0;32mI (25829) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (25849) MOTOR_CTRL: L= 255  R=  44[0m
+[0;32mI (25869) MOTOR_CTRL: L= 255  R=  50[0m
+[0;32mI (25889) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (25909) MOTOR_CTRL: L= 255  R=  39[0m
+[0;32mI (25929) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (25949) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (25969) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (25989) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (26009) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (26029) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (26049) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26069) MOTOR_CTRL: L= 255  R=  32[0m
+[0;32mI (26089) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (26109) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26129) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (26149) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26169) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26189) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26209) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26229) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26249) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26269) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (26289) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (26309) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26329) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26349) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26369) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (26389) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26409) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (26429) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (26449) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26469) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (26489) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26509) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (26529) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (26549) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (26569) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26589) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26609) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26629) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26649) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26669) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (26689) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (26709) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (26729) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (26749) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26769) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26789) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (26809) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26829) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26849) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26869) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26889) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (26909) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (26929) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (26949) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (26969) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (26989) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (27009) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (27029) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (27049) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27069) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27089) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (27109) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27129) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27149) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27169) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27189) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (27209) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27229) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (27249) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27269) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (27289) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27309) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27329) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27349) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (27369) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27389) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (27409) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (27429) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (27449) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (27469) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (27489) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (27509) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27529) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (27549) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (27569) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (27589) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (27609) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (27629) MOTOR_CTRL: L= 255  R=  22[0m
+[0;32mI (27649) MOTOR_CTRL: L= 255  R= -87[0m
+[0;32mI (27669) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27689) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27709) MOTOR_CTRL: L= 255  R= -90[0m
+[0;32mI (27729) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (27749) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27769) MOTOR_CTRL: L= 255  R= -87[0m
+[0;32mI (27789) MOTOR_CTRL: L= 255  R= -87[0m
+[0;32mI (27809) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27829) MOTOR_CTRL: L= 255  R= -92[0m
+[0;32mI (27849) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27869) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27889) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27909) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27929) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (27949) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (27969) MOTOR_CTRL: L= 255  R= -90[0m
+[0;32mI (27989) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (28009) MOTOR_CTRL: L= 255  R= -92[0m
+[0;32mI (28029) MOTOR_CTRL: L= 255  R= -90[0m
+[0;32mI (28049) MOTOR_CTRL: L= 255  R= -90[0m
+[0;32mI (28069) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (28089) MOTOR_CTRL: L= 255  R= -92[0m
+[0;32mI (28109) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28129) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28149) MOTOR_CTRL: L= 255  R= -90[0m
+[0;32mI (28169) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28189) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (28209) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28229) MOTOR_CTRL: L= 255  R= -93[0m
+[0;32mI (28249) MOTOR_CTRL: L= 255  R= -91[0m
+[0;32mI (28269) MOTOR_CTRL: L= 255  R= -92[0m
+[0;32mI (28289) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28309) MOTOR_CTRL: L= 255  R= -89[0m
+[0;32mI (28329) MOTOR_CTRL: L= 255  R= -92[0m
+[0;32mI (28349) MOTOR_CTRL: L= 255  R= -83[0m
+[0;32mI (28369) MOTOR_CTRL: L= 255  R= -67[0m
+[0;32mI (28389) MOTOR_CTRL: L= 255  R= -65[0m
+[0;32mI (28409) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (28429) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (28449) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (28469) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (28489) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28509) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (28529) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (28549) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28569) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28589) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28609) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (28629) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (28649) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (28669) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (28689) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (28709) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28729) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28749) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (28769) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (28789) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (28809) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (28829) MOTOR_CTRL: L= 232  R= 144[0m
+[0;32mI (28849) MOTOR_CTRL: L= -64  R= 255[0m
+[0;32mI (28869) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (28889) MOTOR_CTRL: L=-255  R= 244[0m
+[0;32mI (28909) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (28929) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (28949) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (28969) MOTOR_CTRL: L=-255  R= 244[0m
+[0;32mI (28989) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29009) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (29029) MOTOR_CTRL: L=-255  R= 244[0m
+[0;32mI (29049) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29069) MOTOR_CTRL: L=-255  R= 245[0m
+[0;32mI (29089) MOTOR_CTRL: L=-255  R= 241[0m
+[0;32mI (29109) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29129) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29149) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29169) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (29189) MOTOR_CTRL: L=-255  R= 238[0m
+[0;32mI (29209) MOTOR_CTRL: L=-255  R= 237[0m
+[0;32mI (29229) MOTOR_CTRL: L=-255  R= 236[0m
+[0;32mI (29249) MOTOR_CTRL: L=-255  R= 237[0m
+[0;32mI (29269) MOTOR_CTRL: L=-255  R= 235[0m
+[0;32mI (29289) MOTOR_CTRL: L=-255  R= 236[0m
+[0;32mI (29309) MOTOR_CTRL: L=-255  R= 239[0m
+[0;32mI (29329) MOTOR_CTRL: L=-255  R= 240[0m
+[0;32mI (29349) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (29369) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (29389) MOTOR_CTRL: L=-255  R= 243[0m
+[0;32mI (29409) MOTOR_CTRL: L=-255  R= 244[0m
+[0;32mI (29429) MOTOR_CTRL: L=-255  R= 242[0m
+[0;32mI (29449) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (29469) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (29489) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (29509) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (29529) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (29549) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (29569) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (29589) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (29609) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (29629) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (29649) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (29669) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (29689) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (29709) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (29729) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (29749) MOTOR_CTRL: L= 255  R=  34[0m
+[0;32mI (29769) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (29789) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (29809) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (29829) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (29849) MOTOR_CTRL: L= 255  R=  23[0m
+[0;32mI (29869) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (29889) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (29909) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (29929) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (29949) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (29969) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (29989) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30009) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30029) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (30049) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30069) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30089) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30109) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (30129) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30149) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (30169) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30189) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30209) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30229) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30249) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30269) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (30289) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (30309) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (30329) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30349) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30369) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30389) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (30409) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (30429) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (30449) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (30469) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30489) MOTOR_CTRL: L= 255  R=  30[0m
+[0;32mI (30509) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30529) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30549) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30569) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (30589) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30609) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30629) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (30649) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30669) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30689) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30709) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30729) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30749) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30769) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30789) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30809) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (30829) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (30849) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (30869) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30889) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30909) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30929) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30949) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (30969) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (30989) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31009) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (31029) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (31049) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (31069) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (31089) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31109) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31129) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31149) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31169) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31189) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (31209) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (31229) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31249) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31269) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (31289) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31309) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31329) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (31349) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31369) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31389) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31409) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31429) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (31449) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (31469) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31489) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (31509) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31529) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31549) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31569) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (31589) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31609) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31629) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31649) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (31669) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31689) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31709) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31729) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31749) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (31769) MOTOR_CTRL: L= 255  R=  31[0m
+[0;32mI (31789) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (31809) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31829) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31849) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31869) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31889) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (31909) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (31929) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (31949) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (31969) MOTOR_CTRL: L= 255  R=  24[0m
+[0;32mI (31989) MOTOR_CTRL: L= 255  R=  33[0m
+[0;32mI (32009) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (32029) MOTOR_CTRL: L= 255  R=  27[0m
+[0;32mI (32049) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (32069) MOTOR_CTRL: L= 255  R=  25[0m
+[0;32mI (32089) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (32109) MOTOR_CTRL: L= 255  R=  26[0m
+[0;32mI (32129) MOTOR_CTRL: L= 255  R=  28[0m
+[0;32mI (32149) MOTOR_CTRL: L= 255  R=  29[0m
+[0;32mI (32169) MOTOR_CTRL: L= 255  R=  26[0m

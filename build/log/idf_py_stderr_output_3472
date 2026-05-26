@@ -1,0 +1,4 @@
+[0;33m--- esp-idf-monitor 1.6.2 on com5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is efff3548d819349d4fdaa000e244a4e6327251a8c8b1b900c4c52c8ae477357f[0m
+[0m

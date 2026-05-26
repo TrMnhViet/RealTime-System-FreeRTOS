@@ -1,0 +1,1157 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbcc
+load:0x403ce710,len:0x2f5c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 12 2026 14:31:42[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot: efuse block revision: v1.1[0m
+[0;32mI (38) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a91ch ( 43292) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001a944 vaddr=3fc8be00 size=0132ch (  4908) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001bc78 vaddr=40380000 size=043a0h ( 17312) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b2e4h (111332) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=0003b30c vaddr=403843a0 size=07a04h ( 31236) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     test_control_motor[0m
+[0;32mI (187) app_init: App version:      f897dca-dirty[0m
+[0;32mI (192) app_init: Compile time:     May 12 2026 14:37:10[0m
+[0;32mI (198) app_init: ELF file SHA256:  efff3548d...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.3[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC8E000 len 00032000 (200 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (257) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (285) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (302) SENDER: === Sender khoi dong ===[0m
+[0;32mI (302) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (312) SENDER: Nut MODE: GPIO10[0m
+[0;32mI (312) SENDER: CAN Bus san sang![0m
+[0;32mI (322) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (322) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (332) main_task: Returned from app_main()[0m
+[0;32mI (732) MAX30102: Part ID: 0x15 (expected 0x15)[0m
+[0;32mI (732) MAX30102: MAX30102 initialized[0m
+[0;32mI (732) SENDER: MAX30102: OK[0m
+[0;32mI (732) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (742) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (752) HCSR04: HC-SR04 init xong (TRIG=GPIO2, ECHO=GPIO3)[0m
+[0;32mI (752) SENDER: HC-SR04 san sang[0m
+[0;33mW (792) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (892) SENDER: [MAX30102] Red=917 | IR=1046[0m
+[0;32mI (892) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (922) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1022) SENDER: [MAX30102] Red=833 | IR=951[0m
+[0;32mI (1022) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1052) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1152) SENDER: [MAX30102] Red=850 | IR=949[0m
+[0;32mI (1152) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1182) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1282) SENDER: [MAX30102] Red=930 | IR=1062[0m
+[0;32mI (1282) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1312) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1322) SENDER: [CAN TX] ID=0x003 OK[0m
+[0;32mI (1322) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (1412) SENDER: [MAX30102] Red=834 | IR=937[0m
+[0;32mI (1412) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1442) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1542) SENDER: [MAX30102] Red=904 | IR=1004[0m
+[0;31mE (2542) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (2572) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (2672) SENDER: [MAX30102] Red=859 | IR=1061[0m
+[0;31mE (3672) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (3702) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (3802) SENDER: [MAX30102] Red=927 | IR=1027[0m
+[0;31mE (4802) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (4832) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (4932) SENDER: [MAX30102] Red=792 | IR=1009[0m
+[0;31mE (5932) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (5962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (6062) SENDER: [MAX30102] Red=936 | IR=1056[0m
+[0;31mE (7062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (7092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (7192) SENDER: [MAX30102] Red=792 | IR=929[0m
+[0;31mE (8192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (8222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (8322) SENDER: [MAX30102] Red=930 | IR=1035[0m
+[0;31mE (9322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (9352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (9452) SENDER: [MAX30102] Red=821 | IR=915[0m
+[0;31mE (10452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (10482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (10582) SENDER: [MAX30102] Red=935 | IR=1051[0m
+[0;31mE (11582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (11612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (11712) SENDER: [MAX30102] Red=802 | IR=930[0m
+[0;31mE (12712) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (12742) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (12842) SENDER: [MAX30102] Red=934 | IR=1063[0m
+[0;31mE (13842) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (13872) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (13972) SENDER: [MAX30102] Red=824 | IR=925[0m
+[0;31mE (14972) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (15002) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (15102) SENDER: [MAX30102] Red=926 | IR=1063[0m
+[0;31mE (16102) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (16132) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (16232) SENDER: [MAX30102] Red=839 | IR=944[0m
+[0;31mE (17232) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (17262) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (17362) SENDER: [MAX30102] Red=936 | IR=1062[0m
+[0;31mE (18362) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (18392) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (18492) SENDER: [MAX30102] Red=886 | IR=967[0m
+[0;31mE (19492) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (19522) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (19622) SENDER: [MAX30102] Red=921 | IR=1067[0m
+[0;31mE (20622) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (20652) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (20752) SENDER: [MAX30102] Red=904 | IR=1004[0m
+[0;31mE (21752) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (21782) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (21882) SENDER: [MAX30102] Red=866 | IR=1058[0m
+[0;31mE (22882) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (22912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (23012) SENDER: [MAX30102] Red=887 | IR=971[0m
+[0;31mE (24012) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (24042) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24142) SENDER: [MAX30102] Red=778 | IR=1016[0m
+[0;31mE (25142) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (25172) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25272) SENDER: [MAX30102] Red=911 | IR=1007[0m
+[0;31mE (26272) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (26302) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26402) SENDER: [MAX30102] Red=789 | IR=925[0m
+[0;31mE (27402) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (27432) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (27532) SENDER: [MAX30102] Red=926 | IR=1031[0m
+[0;31mE (28532) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (28562) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (28662) SENDER: [MAX30102] Red=788 | IR=999[0m
+[0;31mE (29662) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (29692) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (29792) SENDER: [MAX30102] Red=909 | IR=1043[0m
+[0;31mE (30792) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (30822) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (30922) SENDER: [MAX30102] Red=827 | IR=954[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbcc
+load:0x403ce710,len:0x2f5c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 12 2026 14:31:42[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot: efuse block revision: v1.1[0m
+[0;32mI (38) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a91ch ( 43292) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001a944 vaddr=3fc8be00 size=0132ch (  4908) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001bc78 vaddr=40380000 size=043a0h ( 17312) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b2e4h (111332) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=0003b30c vaddr=403843a0 size=07a04h ( 31236) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     test_control_motor[0m
+[0;32mI (187) app_init: App version:      f897dca-dirty[0m
+[0;32mI (192) app_init: Compile time:     May 12 2026 14:37:10[0m
+[0;32mI (198) app_init: ELF file SHA256:  efff3548d...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.3[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC8E000 len 00032000 (200 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (257) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (285) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (302) SENDER: === Sender khoi dong ===[0m
+[0;32mI (302) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (312) SENDER: Nut MODE: GPIO10[0m
+[0;32mI (312) SENDER: CAN Bus san sang![0m
+[0;32mI (322) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (322) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (332) main_task: Returned from app_main()[0m
+[0;32mI (732) MAX30102: Part ID: 0x15 (expected 0x15)[0m
+[0;32mI (732) MAX30102: MAX30102 initialized[0m
+[0;32mI (732) SENDER: MAX30102: OK[0m
+[0;32mI (732) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (742) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (752) HCSR04: HC-SR04 init xong (TRIG=GPIO2, ECHO=GPIO3)[0m
+[0;32mI (752) SENDER: HC-SR04 san sang[0m
+[0;32mI (792) SENDER: [HC-SR04] Distance=516 cm[0m
+[0;32mI (792) SENDER: [CAN TX] ID=0x002 OK[0m
+[0;32mI (892) SENDER: [MAX30102] Red=882 | IR=1054[0m
+[0;32mI (892) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (922) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1022) SENDER: [MAX30102] Red=879 | IR=968[0m
+[0;32mI (1022) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1052) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1152) SENDER: [MAX30102] Red=818 | IR=1028[0m
+[0;32mI (1152) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1182) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1282) SENDER: [MAX30102] Red=924 | IR=1007[0m
+[0;32mI (1282) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1312) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1322) SENDER: [CAN TX] ID=0x003 OK[0m
+[0;32mI (1322) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (1412) SENDER: [MAX30102] Red=860 | IR=1054[0m
+[0;31mE (2412) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (2442) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (2542) SENDER: [MAX30102] Red=938 | IR=1036[0m
+[0;31mE (3542) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (3572) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (3672) SENDER: [MAX30102] Red=802 | IR=938[0m
+[0;31mE (4672) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (4702) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (4802) SENDER: [MAX30102] Red=934 | IR=1060[0m
+[0;31mE (5802) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (5832) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (5932) SENDER: [MAX30102] Red=867 | IR=952[0m
+[0;31mE (6932) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (6962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (7062) SENDER: [MAX30102] Red=788 | IR=981[0m
+[0;31mE (8062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (8092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (8192) SENDER: [MAX30102] Red=940 | IR=1052[0m
+[0;31mE (9192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (9222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (9322) SENDER: [MAX30102] Red=886 | IR=971[0m
+[0;31mE (10322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (10352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (10452) SENDER: [MAX30102] Red=816 | IR=1037[0m
+[0;31mE (11452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (11482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (11582) SENDER: [MAX30102] Red=938 | IR=1060[0m
+[0;31mE (12582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (12612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (12712) SENDER: [MAX30102] Red=889 | IR=967[0m
+[0;32mI (732) MAX30102: Part ID: 0x15 (expected 0x15)[0m
+[0;32mI (732) MAX30102: MAX30102 initialized[0m
+[0;32mI (732) SENDER: MAX30102: OK[0m
+[0;32mI (732) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (742) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (752) HCSR04: HC-SR04 init xong (TRIG=GPIO2, ECHO=GPIO3)[0m
+[0;32mI (752) SENDER: HC-SR04 san sang[0m
+[0;32mI (792) SENDER: [HC-SR04] Distance=516 cm[0m
+[0;32mI (792) SENDER: [CAN TX] ID=0x002 OK[0m
+[0;32mI (892) SENDER: [MAX30102] Red=163114 | IR=14502[0m
+[0;32mI (892) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (922) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1022) SENDER: [MAX30102] Red=221505 | IR=244406[0m
+[0;32mI (1022) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1052) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1152) SENDER: [MAX30102] Red=121105 | IR=9205[0m
+[0;32mI (1152) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1182) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1282) SENDER: [MAX30102] Red=63617 | IR=55668[0m
+[0;32mI (1282) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1312) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1322) SENDER: [CAN TX] ID=0x003 OK[0m
+[0;32mI (1322) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (1412) SENDER: [MAX30102] Red=69457 | IR=156286[0m
+[0;31mE (2412) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (2442) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (2542) SENDER: [MAX30102] Red=215764 | IR=226084[0m
+[0;31mE (3542) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (3572) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (3672) SENDER: [MAX30102] Red=8172 | IR=244787[0m
+[0;31mE (4672) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (4702) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (4802) SENDER: [MAX30102] Red=230840 | IR=128055[0m
+[0;31mE (5802) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (5832) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (5932) SENDER: [MAX30102] Red=28087 | IR=16303[0m
+[0;31mE (6932) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (6962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (7062) SENDER: [MAX30102] Red=130215 | IR=258625[0m
+[0;31mE (8062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (8092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (8192) SENDER: [MAX30102] Red=53207 | IR=11215[0m
+[0;31mE (9192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (9222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (9322) SENDER: [MAX30102] Red=156516 | IR=227032[0m
+[0;31mE (10322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (10352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (10452) SENDER: [MAX30102] Red=106227 | IR=55911[0m
+[0;31mE (11452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (11482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (11582) SENDER: [MAX30102] Red=241953 | IR=160368[0m
+[0;31mE (12582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (12612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (12712) SENDER: [MAX30102] Red=2621 | IR=2813[0m
+[0;31mE (13712) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (13742) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (13842) SENDER: [MAX30102] Red=122896 | IR=57524[0m
+[0;31mE (14842) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;32mI (14842) SENDER: [HC-SR04] Distance=112 cm[0m
+[0;31mE (15842) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_TIMEOUT[0m
+[0;32mI (15942) SENDER: [MAX30102] Red=77904 | IR=247408[0m
+[0;31mE (16942) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (16972) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (17072) SENDER: [MAX30102] Red=107257 | IR=125418[0m
+[0;31mE (18072) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (18102) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (18202) SENDER: [MAX30102] Red=205938 | IR=136257[0m
+[0;31mE (19202) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (19232) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (19332) SENDER: [MAX30102] Red=61116 | IR=195101[0m
+[0;31mE (20332) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (20362) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (20462) SENDER: [MAX30102] Red=98857 | IR=101028[0m
+[0;31mE (21462) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (21492) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (21592) SENDER: [MAX30102] Red=167486 | IR=193717[0m
+[0;31mE (22592) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (22622) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (22722) SENDER: [MAX30102] Red=250358 | IR=241712[0m
+[0;31mE (23722) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (24252) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24352) SENDER: [MAX30102] Red=26494 | IR=89462[0m
+[0;31mE (24352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (24382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24482) SENDER: [MAX30102] Red=244247 | IR=244751[0m
+[0;31mE (24482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (24512) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24612) SENDER: [MAX30102] Red=166651 | IR=203514[0m
+[0;31mE (24612) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (24642) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24742) SENDER: [MAX30102] Red=185240 | IR=121208[0m
+[0;31mE (24742) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (24772) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24872) SENDER: [MAX30102] Red=12237 | IR=11194[0m
+[0;31mE (24872) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (24872) SENDER: [HC-SR04] Distance=33 cm[0m
+[0;31mE (24872) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (24982) SENDER: [MAX30102] Red=221545 | IR=120163[0m
+[0;31mE (24982) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25012) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25112) SENDER: [MAX30102] Red=6893 | IR=5870[0m
+[0;31mE (25112) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25142) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25242) SENDER: [MAX30102] Red=61727 | IR=204808[0m
+[0;31mE (25242) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (25252) SENDER: [HC-SR04] Distance=142 cm[0m
+[0;31mE (25252) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (25352) SENDER: [MAX30102] Red=217271 | IR=198567[0m
+[0;31mE (25352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25482) SENDER: [MAX30102] Red=941 | IR=1122[0m
+[0;31mE (25482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25512) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25612) SENDER: [MAX30102] Red=868 | IR=983[0m
+[0;31mE (25612) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25642) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25742) SENDER: [MAX30102] Red=819 | IR=941[0m
+[0;31mE (25742) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25772) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25872) SENDER: [MAX30102] Red=882 | IR=1000[0m
+[0;31mE (25872) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (25902) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26002) SENDER: [MAX30102] Red=820 | IR=943[0m
+[0;31mE (26002) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (26032) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26132) SENDER: [MAX30102] Red=834 | IR=942[0m
+[0;31mE (26132) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (26162) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26262) SENDER: [MAX30102] Red=889 | IR=947[0m
+[0;31mE (26262) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (26292) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26392) SENDER: [MAX30102] Red=899 | IR=948[0m
+[0;31mE (26392) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (26422) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1820
+load:0x403cc710,len:0xbcc
+load:0x403ce710,len:0x2f5c
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 12 2026 14:31:42[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot: efuse block revision: v1.1[0m
+[0;32mI (38) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a91ch ( 43292) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001a944 vaddr=3fc8be00 size=0132ch (  4908) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001bc78 vaddr=40380000 size=043a0h ( 17312) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b2e4h (111332) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=0003b30c vaddr=403843a0 size=07a04h ( 31236) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     test_control_motor[0m
+[0;32mI (187) app_init: App version:      f897dca-dirty[0m
+[0;32mI (192) app_init: Compile time:     May 12 2026 14:37:10[0m
+[0;32mI (198) app_init: ELF file SHA256:  efff3548d...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (213) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.3[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC8E000 len 00032000 (200 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (243) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (250) heap_init: At 50000000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (257) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (285) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (302) SENDER: === Sender khoi dong ===[0m
+[0;32mI (302) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (312) SENDER: Nut MODE: GPIO10[0m
+[0;32mI (312) SENDER: CAN Bus san sang![0m
+[0;32mI (322) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (322) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (332) main_task: Returned from app_main()[0m
+[0;32mI (732) MAX30102: Part ID: 0x15 (expected 0x15)[0m
+[0;32mI (732) MAX30102: MAX30102 initialized[0m
+[0;32mI (732) SENDER: MAX30102: OK[0m
+[0;32mI (732) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (742) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (752) HCSR04: HC-SR04 init xong (TRIG=GPIO2, ECHO=GPIO3)[0m
+[0;32mI (752) SENDER: HC-SR04 san sang[0m
+[0;32mI (792) SENDER: [HC-SR04] Distance=516 cm[0m
+[0;32mI (792) SENDER: [CAN TX] ID=0x002 OK[0m
+[0;32mI (892) SENDER: [MAX30102] Red=948 | IR=986[0m
+[0;32mI (892) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (922) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1022) SENDER: [MAX30102] Red=929 | IR=962[0m
+[0;32mI (1022) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1052) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1152) SENDER: [MAX30102] Red=952 | IR=989[0m
+[0;32mI (1152) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1182) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1282) SENDER: [MAX30102] Red=938 | IR=968[0m
+[0;32mI (1282) SENDER: [CAN TX] ID=0x001 OK[0m
+[0;33mW (1312) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (1322) SENDER: [CAN TX] ID=0x003 OK[0m
+[0;32mI (1322) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (1412) SENDER: [MAX30102] Red=931 | IR=984[0m
+[0;31mE (2412) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (2442) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (2542) SENDER: [MAX30102] Red=942 | IR=969[0m
+[0;31mE (3542) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (3572) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (3672) SENDER: [MAX30102] Red=925 | IR=981[0m
+[0;31mE (4672) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (4702) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (4802) SENDER: [MAX30102] Red=935 | IR=985[0m
+[0;31mE (5802) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (5832) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (5932) SENDER: [MAX30102] Red=891 | IR=949[0m
+[0;31mE (6932) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (6962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (7062) SENDER: [MAX30102] Red=905 | IR=949[0m
+[0;31mE (8062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (8092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (8192) SENDER: [MAX30102] Red=892 | IR=963[0m
+[0;31mE (9192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (9222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (9322) SENDER: [MAX30102] Red=914 | IR=962[0m
+[0;31mE (10322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (10352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (10452) SENDER: [MAX30102] Red=910 | IR=995[0m
+[0;31mE (11452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (11482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (11582) SENDER: [MAX30102] Red=902 | IR=982[0m
+[0;31mE (12582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (12612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (12712) SENDER: [MAX30102] Red=964 | IR=996[0m
+[0;31mE (13712) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (13742) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (13842) SENDER: [MAX30102] Red=941 | IR=999[0m
+[0;31mE (14842) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (14872) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (14972) SENDER: [MAX30102] Red=959 | IR=995[0m
+[0;31mE (15972) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (16002) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (16102) SENDER: [MAX30102] Red=973 | IR=996[0m
+[0;31mE (17102) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (17132) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (17232) SENDER: [MAX30102] Red=975 | IR=985[0m
+[0;31mE (18232) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (18262) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (18362) SENDER: [MAX30102] Red=967 | IR=974[0m
+[0;31mE (19362) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (19392) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (19492) SENDER: [MAX30102] Red=946 | IR=955[0m
+[0;31mE (20492) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (20522) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (20622) SENDER: [MAX30102] Red=923 | IR=949[0m
+[0;31mE (21622) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (21652) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (21752) SENDER: [MAX30102] Red=930 | IR=993[0m
+[0;31mE (22752) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (22782) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (22882) SENDER: [MAX30102] Red=909 | IR=989[0m
+[0;31mE (23882) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (23912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (24012) SENDER: [MAX30102] Red=912 | IR=972[0m
+[0;31mE (25012) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (25042) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (25142) SENDER: [MAX30102] Red=902 | IR=993[0m
+[0;31mE (26142) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (26172) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (26272) SENDER: [MAX30102] Red=919 | IR=985[0m
+[0;31mE (27272) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (27302) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (27402) SENDER: [MAX30102] Red=890 | IR=958[0m
+[0;31mE (28402) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (28432) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (28532) SENDER: [MAX30102] Red=917 | IR=984[0m
+[0;31mE (29532) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (29562) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (29662) SENDER: [MAX30102] Red=885 | IR=968[0m
+[0;31mE (30662) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (30692) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (30792) SENDER: [MAX30102] Red=935 | IR=983[0m
+[0;31mE (31792) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (31822) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (31922) SENDER: [MAX30102] Red=919 | IR=958[0m
+[0;31mE (32922) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (32952) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (33052) SENDER: [MAX30102] Red=899 | IR=955[0m
+[0;31mE (34052) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (34082) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (34182) SENDER: [MAX30102] Red=932 | IR=982[0m
+[0;31mE (35182) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (35212) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (35312) SENDER: [MAX30102] Red=909 | IR=964[0m
+[0;31mE (36312) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (36342) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (36442) SENDER: [MAX30102] Red=943 | IR=986[0m
+[0;31mE (37442) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (37472) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (37572) SENDER: [MAX30102] Red=923 | IR=958[0m
+[0;31mE (38572) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (38602) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (38702) SENDER: [MAX30102] Red=925 | IR=962[0m
+[0;31mE (39702) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (39732) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (39832) SENDER: [MAX30102] Red=943 | IR=990[0m
+[0;31mE (40832) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (40862) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (40962) SENDER: [MAX30102] Red=948 | IR=985[0m
+[0;31mE (41962) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (41992) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (42092) SENDER: [MAX30102] Red=943 | IR=977[0m
+[0;31mE (43092) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (43122) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (43222) SENDER: [MAX30102] Red=938 | IR=978[0m
+[0;31mE (44222) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (44252) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (44352) SENDER: [MAX30102] Red=923 | IR=955[0m
+[0;31mE (45352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (45382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (45482) SENDER: [MAX30102] Red=921 | IR=972[0m
+[0;31mE (46482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (46512) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (46612) SENDER: [MAX30102] Red=946 | IR=992[0m
+[0;31mE (47612) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (47642) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (47742) SENDER: [MAX30102] Red=949 | IR=991[0m
+[0;31mE (48742) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (48772) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (48872) SENDER: [MAX30102] Red=911 | IR=972[0m
+[0;31mE (49872) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (49902) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (50002) SENDER: [MAX30102] Red=911 | IR=963[0m
+[0;31mE (51002) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (51032) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (51132) SENDER: [MAX30102] Red=889 | IR=954[0m
+[0;31mE (52132) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_TIMEOUT[0m
+[0;33mW (52162) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (52262) SENDER: [MAX30102] Red=918 | IR=991[0m
+[0;31mE (52262) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (52792) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (52892) SENDER: [MAX30102] Red=931 | IR=988[0m
+[0;31mE (52892) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (52922) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53022) SENDER: [MAX30102] Red=919 | IR=975[0m
+[0;31mE (53022) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53052) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53152) SENDER: [MAX30102] Red=916 | IR=969[0m
+[0;31mE (53152) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53182) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53282) SENDER: [MAX30102] Red=900 | IR=952[0m
+[0;31mE (53282) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (53312) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (53312) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;33mW (53312) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53412) SENDER: [MAX30102] Red=895 | IR=951[0m
+[0;31mE (53412) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53442) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53542) SENDER: [MAX30102] Red=924 | IR=983[0m
+[0;31mE (53542) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53572) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53672) SENDER: [MAX30102] Red=932 | IR=983[0m
+[0;31mE (53672) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53702) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53802) SENDER: [MAX30102] Red=917 | IR=969[0m
+[0;31mE (53802) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53832) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (53932) SENDER: [MAX30102] Red=911 | IR=975[0m
+[0;31mE (53932) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (53962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54062) SENDER: [MAX30102] Red=904 | IR=951[0m
+[0;31mE (54062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54192) SENDER: [MAX30102] Red=897 | IR=953[0m
+[0;31mE (54192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54322) SENDER: [MAX30102] Red=924 | IR=986[0m
+[0;31mE (54322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54452) SENDER: [MAX30102] Red=928 | IR=979[0m
+[0;31mE (54452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54582) SENDER: [MAX30102] Red=925 | IR=970[0m
+[0;31mE (54582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54712) SENDER: [MAX30102] Red=919 | IR=968[0m
+[0;31mE (54712) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54742) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (54842) SENDER: [MAX30102] Red=902 | IR=947[0m
+[0;31mE (54842) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (54872) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;33mW (55002) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55102) SENDER: [MAX30102] Red=912 | IR=988[0m
+[0;31mE (55102) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55132) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55232) SENDER: [MAX30102] Red=935 | IR=981[0m
+[0;31mE (55232) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55262) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (55322) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (55322) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (55362) SENDER: [MAX30102] Red=912 | IR=980[0m
+[0;31mE (55362) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55392) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55492) SENDER: [MAX30102] Red=908 | IR=976[0m
+[0;31mE (55492) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55522) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55622) SENDER: [MAX30102] Red=898 | IR=955[0m
+[0;31mE (55622) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55652) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55752) SENDER: [MAX30102] Red=898 | IR=955[0m
+[0;31mE (55752) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55782) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (55882) SENDER: [MAX30102] Red=902 | IR=986[0m
+[0;31mE (55882) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (55912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56012) SENDER: [MAX30102] Red=916 | IR=986[0m
+[0;31mE (56012) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56042) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56142) SENDER: [MAX30102] Red=919 | IR=979[0m
+[0;31mE (56142) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (56152) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (56152) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;33mW (56172) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56272) SENDER: [MAX30102] Red=915 | IR=974[0m
+[0;31mE (56272) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56302) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56402) SENDER: [MAX30102] Red=907 | IR=965[0m
+[0;31mE (56402) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56432) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56532) SENDER: [MAX30102] Red=902 | IR=958[0m
+[0;31mE (56532) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56562) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56662) SENDER: [MAX30102] Red=904 | IR=977[0m
+[0;31mE (56662) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56692) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (56792) SENDER: [MAX30102] Red=890 | IR=984[0m
+[0;31mE (56792) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56822) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (56922) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (56922) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;32mI (56922) SENDER: [MAX30102] Red=12740 | IR=13981[0m
+[0;31mE (56922) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (56962) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57062) SENDER: [MAX30102] Red=73143 | IR=69902[0m
+[0;31mE (57062) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57092) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57192) SENDER: [MAX30102] Red=40478 | IR=46245[0m
+[0;31mE (57192) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57222) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57322) SENDER: [MAX30102] Red=74296 | IR=85171[0m
+[0;31mE (57322) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57352) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57452) SENDER: [MAX30102] Red=108112 | IR=103642[0m
+[0;31mE (57452) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57482) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57582) SENDER: [MAX30102] Red=108524 | IR=104047[0m
+[0;31mE (57582) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57612) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (57692) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (57692) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (57712) SENDER: [MAX30102] Red=117469 | IR=110607[0m
+[0;31mE (57712) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57742) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57842) SENDER: [MAX30102] Red=122545 | IR=114145[0m
+[0;31mE (57842) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (57872) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (57972) SENDER: [MAX30102] Red=125415 | IR=116059[0m
+[0;31mE (57972) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58002) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58102) SENDER: [MAX30102] Red=126481 | IR=116933[0m
+[0;31mE (58102) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58132) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58232) SENDER: [MAX30102] Red=127314 | IR=117434[0m
+[0;31mE (58232) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58262) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (58322) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (58322) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (58362) SENDER: [MAX30102] Red=126813 | IR=117293[0m
+[0;31mE (58362) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58392) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58492) SENDER: [MAX30102] Red=124143 | IR=116167[0m
+[0;31mE (58492) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58522) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58622) SENDER: [MAX30102] Red=124582 | IR=116390[0m
+[0;31mE (58622) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58652) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58752) SENDER: [MAX30102] Red=124862 | IR=116419[0m
+[0;31mE (58752) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58782) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (58882) SENDER: [MAX30102] Red=124038 | IR=115665[0m
+[0;31mE (58882) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (58912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (58932) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (58932) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;32mI (59012) SENDER: [MAX30102] Red=122927 | IR=115076[0m
+[0;31mE (59012) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59042) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (59142) SENDER: [MAX30102] Red=124248 | IR=115596[0m
+[0;31mE (59142) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59172) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;33mW (59302) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (59402) SENDER: [MAX30102] Red=122218 | IR=114338[0m
+[0;31mE (59402) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59432) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (59532) SENDER: [MAX30102] Red=124423 | IR=115639[0m
+[0;31mE (59532) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59562) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (59642) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (59642) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (59662) SENDER: [MAX30102] Red=121504 | IR=113815[0m
+[0;31mE (59662) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59692) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (59792) SENDER: [MAX30102] Red=124428 | IR=115841[0m
+[0;31mE (59792) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59822) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (59922) SENDER: [MAX30102] Red=123933 | IR=115751[0m
+[0;31mE (59922) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (59952) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60052) SENDER: [MAX30102] Red=122467 | IR=115120[0m
+[0;31mE (60052) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60082) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60182) SENDER: [MAX30102] Red=122515 | IR=115126[0m
+[0;31mE (60182) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60212) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (60292) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (60292) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (60312) SENDER: [MAX30102] Red=122429 | IR=115030[0m
+[0;31mE (60312) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60342) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60442) SENDER: [MAX30102] Red=111365 | IR=108850[0m
+[0;31mE (60442) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60472) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60572) SENDER: [MAX30102] Red=115495 | IR=111352[0m
+[0;31mE (60572) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60602) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60702) SENDER: [MAX30102] Red=121880 | IR=114848[0m
+[0;31mE (60702) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60732) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (60822) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (60822) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;32mI (60832) SENDER: [MAX30102] Red=119576 | IR=113684[0m
+[0;31mE (60832) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60862) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (60962) SENDER: [MAX30102] Red=117894 | IR=112810[0m
+[0;31mE (60962) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (60992) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (61092) SENDER: [MAX30102] Red=120910 | IR=114283[0m
+[0;31mE (61092) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61122) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (61222) SENDER: [MAX30102] Red=116188 | IR=111647[0m
+[0;31mE (61222) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61252) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (61352) SENDER: [MAX30102] Red=119080 | IR=113393[0m
+[0;31mE (61352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (61372) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (61372) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;33mW (61382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (61482) SENDER: [MAX30102] Red=119196 | IR=113472[0m
+[0;31mE (61482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61512) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (61612) SENDER: [MAX30102] Red=120098 | IR=114115[0m
+[0;31mE (61612) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61642) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (61682) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (61682) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (61742) SENDER: [MAX30102] Red=120960 | IR=114638[0m
+[0;31mE (61742) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61772) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (61872) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (61872) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;32mI (61872) SENDER: [MAX30102] Red=121475 | IR=114947[0m
+[0;31mE (61872) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (61912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (62012) SENDER: [MAX30102] Red=109949 | IR=108835[0m
+[0;31mE (62012) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62042) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (62082) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62082) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (62142) SENDER: [MAX30102] Red=119065 | IR=113705[0m
+[0;31mE (62142) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62172) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (62252) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62252) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (62272) SENDER: [MAX30102] Red=120608 | IR=114567[0m
+[0;31mE (62272) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62302) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (62402) SENDER: [MAX30102] Red=121107 | IR=114880[0m
+[0;31mE (62402) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (62422) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62422) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;33mW (62432) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (62532) SENDER: [MAX30102] Red=122321 | IR=115586[0m
+[0;31mE (62532) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62562) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (62572) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62572) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (62662) SENDER: [MAX30102] Red=111563 | IR=109639[0m
+[0;31mE (62662) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62692) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (62762) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62762) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (62792) SENDER: [MAX30102] Red=117273 | IR=112512[0m
+[0;31mE (62792) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (62822) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (62922) SENDER: [MAX30102] Red=119605 | IR=113803[0m
+[0;31mE (62922) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (62932) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (62932) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;33mW (62952) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (63052) SENDER: [MAX30102] Red=118371 | IR=113254[0m
+[0;31mE (63052) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63082) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (63122) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63122) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (63182) SENDER: [MAX30102] Red=119141 | IR=113862[0m
+[0;31mE (63182) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63212) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (63292) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63292) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;32mI (63312) SENDER: [MAX30102] Red=105916 | IR=105090[0m
+[0;31mE (63312) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63342) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (63442) SENDER: [MAX30102] Red=108737 | IR=106208[0m
+[0;31mE (63442) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63472) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (63482) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63482) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;33mW (63602) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (63672) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63672) SENDER: >>> Chuyen sang che do: EYE UART[0m
+[0;32mI (63702) SENDER: [MAX30102] Red=108584 | IR=106544[0m
+[0;31mE (63702) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63732) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (63832) SENDER: [MAX30102] Red=110120 | IR=107142[0m
+[0;31mE (63832) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;31mE (63862) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63862) SENDER: >>> Chuyen sang che do: JOYSTICK[0m
+[0;33mW (63862) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (63962) SENDER: [MAX30102] Red=104846 | IR=104725[0m
+[0;31mE (63962) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (63992) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;31mE (64072) SENDER: [CAN TX] ID=0x003 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (64072) SENDER: >>> Chuyen sang che do: WEB[0m
+[0;32mI (64092) SENDER: [MAX30102] Red=101186 | IR=102016[0m
+[0;31mE (64092) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64122) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64222) SENDER: [MAX30102] Red=107167 | IR=105358[0m
+[0;31mE (64222) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64252) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64352) SENDER: [MAX30102] Red=102871 | IR=103153[0m
+[0;31mE (64352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64482) SENDER: [MAX30102] Red=103674 | IR=103653[0m
+[0;31mE (64482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (64492) SENDER: [HC-SR04] Distance=203 cm[0m
+[0;31mE (64492) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (64592) SENDER: [MAX30102] Red=98331 | IR=99162[0m
+[0;31mE (64592) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64622) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64722) SENDER: [MAX30102] Red=100190 | IR=101334[0m
+[0;31mE (64722) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64752) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64852) SENDER: [MAX30102] Red=103426 | IR=103070[0m
+[0;31mE (64852) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (64882) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (64982) SENDER: [MAX30102] Red=99494 | IR=100743[0m
+[0;31mE (64982) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (64992) SENDER: [HC-SR04] Distance=147 cm[0m
+[0;31mE (64992) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65092) SENDER: [MAX30102] Red=96982 | IR=98093[0m
+[0;31mE (65092) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65092) SENDER: [HC-SR04] Distance=118 cm[0m
+[0;31mE (65092) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65202) SENDER: [MAX30102] Red=98751 | IR=100439[0m
+[0;31mE (65202) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65212) SENDER: [HC-SR04] Distance=167 cm[0m
+[0;31mE (65212) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65312) SENDER: [MAX30102] Red=100528 | IR=101909[0m
+[0;31mE (65312) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65312) SENDER: [HC-SR04] Distance=23 cm[0m
+[0;31mE (65312) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65422) SENDER: [MAX30102] Red=101060 | IR=102216[0m
+[0;31mE (65422) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (65452) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (65552) SENDER: [MAX30102] Red=95445 | IR=97576[0m
+[0;31mE (65552) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (65582) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (65682) SENDER: [MAX30102] Red=94225 | IR=96197[0m
+[0;31mE (65682) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (65712) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (65812) SENDER: [MAX30102] Red=96879 | IR=98327[0m
+[0;31mE (65812) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65812) SENDER: [HC-SR04] Distance=66 cm[0m
+[0;31mE (65812) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (65922) SENDER: [MAX30102] Red=104351 | IR=104436[0m
+[0;31mE (65922) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (65952) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66052) SENDER: [MAX30102] Red=99415 | IR=100241[0m
+[0;31mE (66052) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66082) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66182) SENDER: [MAX30102] Red=105123 | IR=105426[0m
+[0;31mE (66182) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (66192) SENDER: [HC-SR04] Distance=171 cm[0m
+[0;31mE (66192) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (66292) SENDER: [MAX30102] Red=98591 | IR=100705[0m
+[0;31mE (66292) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66322) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66422) SENDER: [MAX30102] Red=100719 | IR=102762[0m
+[0;31mE (66422) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66452) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66552) SENDER: [MAX30102] Red=99005 | IR=100049[0m
+[0;31mE (66552) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66582) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66682) SENDER: [MAX30102] Red=103749 | IR=103248[0m
+[0;31mE (66682) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66712) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66812) SENDER: [MAX30102] Red=111931 | IR=108537[0m
+[0;31mE (66812) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66842) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (66942) SENDER: [MAX30102] Red=97717 | IR=97345[0m
+[0;31mE (66942) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (66972) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67072) SENDER: [MAX30102] Red=97595 | IR=96613[0m
+[0;31mE (67072) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67102) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67202) SENDER: [MAX30102] Red=113067 | IR=109123[0m
+[0;31mE (67202) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67232) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67332) SENDER: [MAX30102] Red=103536 | IR=102587[0m
+[0;31mE (67332) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67362) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67462) SENDER: [MAX30102] Red=107680 | IR=106594[0m
+[0;31mE (67462) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67492) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67592) SENDER: [MAX30102] Red=117866 | IR=112579[0m
+[0;31mE (67592) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67622) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67722) SENDER: [MAX30102] Red=112073 | IR=109205[0m
+[0;31mE (67722) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67752) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67852) SENDER: [MAX30102] Red=111793 | IR=108357[0m
+[0;31mE (67852) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (67882) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (67982) SENDER: [MAX30102] Red=111221 | IR=111080[0m
+[0;31mE (67982) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68012) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68112) SENDER: [MAX30102] Red=94797 | IR=103673[0m
+[0;31mE (68112) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68142) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68242) SENDER: [MAX30102] Red=59054 | IR=67372[0m
+[0;31mE (68242) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (68242) SENDER: [HC-SR04] Distance=102 cm[0m
+[0;31mE (68242) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (68352) SENDER: [MAX30102] Red=2825 | IR=3207[0m
+[0;31mE (68352) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68382) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68482) SENDER: [MAX30102] Red=1478 | IR=1747[0m
+[0;31mE (68482) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68512) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68612) SENDER: [MAX30102] Red=1389 | IR=1656[0m
+[0;31mE (68612) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68642) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68742) SENDER: [MAX30102] Red=1180 | IR=1404[0m
+[0;31mE (68742) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68772) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (68872) SENDER: [MAX30102] Red=1119 | IR=1307[0m
+[0;31mE (68872) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (68902) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69002) SENDER: [MAX30102] Red=1097 | IR=1309[0m
+[0;31mE (69002) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69032) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69132) SENDER: [MAX30102] Red=1136 | IR=1301[0m
+[0;31mE (69132) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69162) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69262) SENDER: [MAX30102] Red=1103 | IR=1315[0m
+[0;31mE (69262) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69292) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69392) SENDER: [MAX30102] Red=1133 | IR=1294[0m
+[0;31mE (69392) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69422) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69522) SENDER: [MAX30102] Red=1129 | IR=1316[0m
+[0;31mE (69522) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69552) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69652) SENDER: [MAX30102] Red=1127 | IR=1305[0m
+[0;31mE (69652) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69682) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69782) SENDER: [MAX30102] Red=1115 | IR=1321[0m
+[0;31mE (69782) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69812) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (69912) SENDER: [MAX30102] Red=1134 | IR=1306[0m
+[0;31mE (69912) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (69942) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70042) SENDER: [MAX30102] Red=1106 | IR=1284[0m
+[0;31mE (70042) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70072) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70172) SENDER: [MAX30102] Red=1133 | IR=1314[0m
+[0;31mE (70172) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70202) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70302) SENDER: [MAX30102] Red=1107 | IR=1284[0m
+[0;31mE (70302) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70332) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70432) SENDER: [MAX30102] Red=1131 | IR=1308[0m
+[0;31mE (70432) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70462) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70562) SENDER: [MAX30102] Red=1108 | IR=1287[0m
+[0;31mE (70562) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70592) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70692) SENDER: [MAX30102] Red=1145 | IR=1321[0m
+[0;31mE (70692) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70722) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70822) SENDER: [MAX30102] Red=1127 | IR=1293[0m
+[0;31mE (70822) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70852) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (70952) SENDER: [MAX30102] Red=1130 | IR=1316[0m
+[0;31mE (70952) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (70982) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71082) SENDER: [MAX30102] Red=1121 | IR=1296[0m
+[0;31mE (71082) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71112) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71212) SENDER: [MAX30102] Red=1100 | IR=1312[0m
+[0;31mE (71212) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71242) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71342) SENDER: [MAX30102] Red=1127 | IR=1305[0m
+[0;31mE (71342) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71372) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71472) SENDER: [MAX30102] Red=1098 | IR=1287[0m
+[0;31mE (71472) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71502) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71602) SENDER: [MAX30102] Red=1134 | IR=1318[0m
+[0;31mE (71602) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71632) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71732) SENDER: [MAX30102] Red=1101 | IR=1285[0m
+[0;31mE (71732) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71762) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71862) SENDER: [MAX30102] Red=1134 | IR=1324[0m
+[0;31mE (71862) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (71892) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (71992) SENDER: [MAX30102] Red=1114 | IR=1289[0m
+[0;31mE (71992) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72022) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72122) SENDER: [MAX30102] Red=1132 | IR=1317[0m
+[0;31mE (72122) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (72122) SENDER: [HC-SR04] Distance=105 cm[0m
+[0;31mE (72122) SENDER: [CAN TX] ID=0x002 loi: ESP_ERR_INVALID_STATE[0m
+[0;32mI (72232) SENDER: [MAX30102] Red=1122 | IR=1303[0m
+[0;31mE (72232) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72262) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72362) SENDER: [MAX30102] Red=1096 | IR=1309[0m
+[0;31mE (72362) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72392) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72492) SENDER: [MAX30102] Red=1133 | IR=1312[0m
+[0;31mE (72492) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72522) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72622) SENDER: [MAX30102] Red=1105 | IR=1280[0m
+[0;31mE (72622) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72652) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72752) SENDER: [MAX30102] Red=1133 | IR=1327[0m
+[0;31mE (72752) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72782) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
+[0;32mI (72882) SENDER: [MAX30102] Red=1100 | IR=1290[0m
+[0;31mE (72882) SENDER: [CAN TX] ID=0x001 loi: ESP_ERR_INVALID_STATE[0m
+[0;33mW (72912) HCSR04: Timeout ECHO qua dai (ngoai tam do)[0m
