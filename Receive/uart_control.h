@@ -8,9 +8,9 @@
  *  Điền đúng UART port và GPIO bạn dùng
  * ═══════════════════════════════════════════════ */
 #define JETSON_UART_PORT    UART_NUM_1       /* đổi sang UART_NUM_1 nếu cần */
-#define JETSON_UART_TX      GPIO_NUM_21      /* TX ESP32 → RX Jetson (ít dùng) */
-#define JETSON_UART_RX      GPIO_NUM_20      /* RX ESP32 ← TX Jetson           */
-#define JETSON_UART_BAUD    115200
+// #define JETSON_UART_TX      GPIO_NUM_21      /* TX ESP32 → RX Jetson (ít dùng) */
+#define JETSON_UART_RX      GPIO_NUM_8      /* RX ESP32 ← TX Jetson           */
+#define JETSON_UART_BAUD    9600
 
 /* ═══════════════════════════════════════════════
  *  PROTOCOL (1 byte/lệnh, đơn giản nhất)
@@ -34,3 +34,4 @@ void uart_control_init(void);
  *        Truyền làm tham số cho xTaskCreate().
  */
 void uart_control_task(void *arg);
+   

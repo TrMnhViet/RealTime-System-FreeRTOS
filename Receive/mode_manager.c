@@ -125,7 +125,9 @@ static const char *TAG = "MODE_MGR";
 /* ═══════════════════════════════════════════════
  *  STATE
  * ═══════════════════════════════════════════════ */
-static volatile robot_mode_t  s_current_mode = MODE_JOYSTICK;
+// static volatile robot_mode_t  s_current_mode = MODE_JOYSTICK;
+static volatile robot_mode_t  s_current_mode = MODE_UART;
+
 static volatile sensor_data_t s_sensor       = {0};
 EventGroupHandle_t             g_mode_event_group = NULL;
 
@@ -231,7 +233,8 @@ void mode_manager_init(void)
     g_mode_event_group = xEventGroupCreate();
     configASSERT(g_mode_event_group);
 
-    xEventGroupSetBits(g_mode_event_group, BIT_MODE_JOYSTICK);
+    // xEventGroupSetBits(g_mode_event_group, BIT_MODE_JOYSTICK);
+    xEventGroupSetBits(g_mode_event_group, BIT_MODE_UART);
 
     twai_general_config_t g_config = TWAI_GENERAL_CONFIG_DEFAULT(
         CAN_TX_GPIO, CAN_RX_GPIO, TWAI_MODE_NORMAL);

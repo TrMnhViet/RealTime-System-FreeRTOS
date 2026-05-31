@@ -63,7 +63,7 @@ void app_main(void)
     mqtt_control_init();
 
     /* 4. Khởi tạo UART (Jetson Nano) */
-    // uart_control_init();
+    uart_control_init();
 
     /* 5. Khởi tạo sensor monitor (HC-SR04 + MAX30102) */
     sensor_monitor_init();

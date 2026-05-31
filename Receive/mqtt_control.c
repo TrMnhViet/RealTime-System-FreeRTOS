@@ -402,12 +402,15 @@ static void wifi_init(void)
         .sta = {
             .ssid      = WIFI_SSID,
             .password  = WIFI_PASS,
-            .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+            // .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+            .threshold.authmode = WIFI_AUTH_WPA_PSK,
+
         },
     };
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_cfg));
     ESP_ERROR_CHECK(esp_wifi_start());
+    ESP_ERROR_CHECK(esp_wifi_set_ps(WIFI_PS_NONE));
     ESP_ERROR_CHECK(esp_wifi_connect());
 
     ESP_LOGI(TAG, "WiFi connecting: %s — cho IP...", WIFI_SSID);

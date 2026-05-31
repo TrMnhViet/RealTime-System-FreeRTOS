@@ -78,9 +78,9 @@
 #define LEDC_TIMER          LEDC_TIMER_0
 #define PWM_RESOLUTION      LEDC_TIMER_12_BIT
 #define PWM_FREQ_HZ         1000
-#define PWM_MAX             1023
+#define PWM_MAX             2047
 #define PWM_MIN_MOVE        150
-#define PWM_TURN_MIN        511
+#define PWM_TURN_MIN        0
 
 /* ═══════════════════════════════════════════════
  *  MOTOR GPIO — L298N / BTS7960 hoặc tương đương
