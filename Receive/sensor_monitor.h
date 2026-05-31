@@ -13,7 +13,7 @@
  * ═══════════════════════════════════════════════ */
 
 /* ── Ngưỡng HC-SR04 (cm) ── */
-#define OBSTACLE_DIST_CM    70      /* < 30 cm → dừng khẩn cấp */
+#define OBSTACLE_DIST_CM    70      /* < 70 cm → dừng khẩn cấp */
 
 /* ── Ngưỡng nhịp tim (BPM ước tính từ IR ratio) ──
  *  MAX30102 gửi raw IR; threshold dưới đây là raw IR tương đương ~100 BPM.
